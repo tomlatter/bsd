@@ -10,9 +10,9 @@ import { useNavigate } from 'react-router-dom'
 
 const cards = [
   {
-    title: 'Origines',
+    title: 'Histoire',
     description: 'Découvrez les origines du Bâton de Combat. Self-Défense et de son fondateur.',
-    path: '/origines',
+    path: '/histoire',
     image: '/img/histoire.jpg',
   },
   {
@@ -71,7 +71,7 @@ export default function Accueil() {
     maxWidth: 1200,
     mx: 'auto',
     px: { xs: 0, md: 2 },
-    py: { xs: 2, md: 4 },
+    py: { xs: 0, md: 4 },
   }}
 >
   {/* Left Side: Text */}
@@ -81,7 +81,7 @@ export default function Accueil() {
       sx={{
         fontWeight: 700,
         fontSize: {
-          xs: '1.3rem',
+          xs: '1.6rem',
           md: '2.3rem',
         },
         mb: 1,
@@ -102,7 +102,7 @@ export default function Accueil() {
       sx={{
         fontWeight: 700,
         fontSize: {
-          xs: '1.3rem',
+          xs: '1rem',
           md: '1.5rem',
         },
         textAlign: 'left',
@@ -143,7 +143,7 @@ export default function Accueil() {
                 <Box
                   sx={{
                     width: '100%',
-                    height: {xs: 340, md: 400},
+                    height: {xs: 280, md: 400},
                     backgroundImage: `url(${'/img/front.png'})`,
                     backgroundSize: 'cover',
                     backgroundPosition: 'center',
@@ -187,10 +187,14 @@ export default function Accueil() {
                       borderRadius: 0,
                       px: 3,
                       mb: 2,
+                      fontSize: {
+                        xs: '1.1rem',
+                        md: '1.3rem'
+                      },
                       color: "#70124f"
                     }}
                   >
-                    Découvrez le site web du club
+                    Visitez le site du club
                   </Button>
                 </CardContent>
               </CardActionArea>

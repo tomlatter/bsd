@@ -1,5 +1,3 @@
-Réflexions et commentaires : Jean Louis Brinker 
-
 1- La méditation est un des arts majeur dans la vie, peut-être l'art suprême et on ne peut l'apprendre de personne, c'est sa beauté. Il n'y a pas de technique, donc pas d'autorité. Lorsque vous apprenez à vous connaître, observez vous, observez la façon dont vous marchez, dont vous mangez, ce que vous dites, les commérages, la haine, la jalousie. Être conscient de tout cela en vous, sans options, fait parti de la méditation. Krishnamurti
 
  « Il ne peut y avoir de véritable méditation sans l'observation et le travail sur soi-même. Pratiquer za zen (za = genoux en japonais, méditation assise), à la façon des moines Bouddhistes, ressentir et se concentrer dans son propre intérieur n'est pas une chose facile à réaliser. Avant tout, il faut apprendre à se connaître, s'observer et apporter des modifications à son comportement de tout les jours. C'est un combat très dur, âpre et difficile, c'est la voie de l'éveil. La méditation za zen ou toute autre forme de méditation, active comme la pratique des arts martiaux, aide à ce travail sur soi. JLB »

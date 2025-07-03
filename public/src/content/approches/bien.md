@@ -1,5 +1,3 @@
-L'essentiel est d'être bien dans sa peau.
-
 Le pratiquant peut faire le choix de ne pas pratiquer toutes les disciplines du BSD et peut réduire son apprentissage à la maîtrise du combat au bâton ou à l’étude de la self-défense et du pied poing.
 
 Cependant si le BSD à intégré toutes ces disciplines c'est parce qu'elle sont complémentaires au point de former un tout qui permet d'atteindre un bon équilibre physique et mental.

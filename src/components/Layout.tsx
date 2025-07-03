@@ -17,7 +17,7 @@ import logo from '/img/logo_noir.png'
 
 const navItems = [
   { label: 'Accueil', path: '/' },
-  { label: 'Origines', path: '/origines' },
+  { label: 'Histoire', path: '/histoire' },
   { label: 'Approches', path: '/approches' },
   { label: 'Techniques', path: '/techniques' },
   { label: 'Niveaux', path: '/niveaux' },

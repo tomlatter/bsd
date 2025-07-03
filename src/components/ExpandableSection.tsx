@@ -22,15 +22,26 @@ const ExpandMore = styled((props: any) => {
 }))
 
 interface ExpandableSectionProps {
+  id: string
   title: string
   mdPath: string
   subtitle: string
 }
 
-export default function ExpandableSection({ title, mdPath, subtitle }: ExpandableSectionProps) {
+export default function ExpandableSection({ title, mdPath, subtitle, id }: ExpandableSectionProps) {
   const [expanded, setExpanded] = useState(false)
   const [content, setContent] = useState('')
   const [loading, setLoading] = useState(true)
+
+  const handleToggle = (e: React.MouseEvent) => {
+    e.stopPropagation()
+    const next = !expanded
+    setExpanded(next)
+
+    if (next) {
+      window.history.pushState(null, '', `#${id}`)
+    }
+  }
 
   useEffect(() => {
     fetch(mdPath)
@@ -38,35 +49,48 @@ export default function ExpandableSection({ title, mdPath, subtitle }: Expandabl
       .then((text) => {
         setContent(text)
         setLoading(false)
+
+        // Auto-expand if hash matches this section's ID
+        if (window.location.hash === `#${id}`) {
+          setExpanded(true)
+          // Scroll to this section (optional)
+          document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' })
+        }
       })
       .catch(() => {
         setContent('Erreur lors du chargement du contenu.')
         setLoading(false)
       })
-  }, [mdPath])
+  }, [mdPath, id])
+
 
   const firstParagraph = subtitle
   
   return (
     <Card
+      id={id}
       sx={{
-        mb: 3,
-        border: '1px solid #ccc',
+        mb: 2,
+        border: !expanded ? '1px solid #ccc' : '3px solid #70124f',
+        maxHeight: !expanded ? '120px' : null,
         cursor: 'pointer',
         position: 'relative',
-        px: 4,
+        px: {xs: 3, md: 4},
         pt: 5,
         pb: 2,
-        '&:hover': { backgroundColor: 'rgba(0,0,0,0.02)' },
+        '&:hover': { backgroundColor: !expanded ? 'rgba(0,0,0,0.02)' : '#fff'},
       }}
-      onClick={() => setExpanded(!expanded)}
+      onClick={() => {
+        const next = !expanded
+        setExpanded(next)
+        if (next) {
+          window.history.pushState(null, '', `#${id}`)
+        }
+      }}
     >
       <ExpandMore
         expand={expanded}
-        onClick={(e: { stopPropagation: () => void }) => {
-          e.stopPropagation()
-          setExpanded(!expanded)
-        }}
+        onClick={handleToggle}
         aria-expanded={expanded}
         aria-label="expand"
         sx={{
@@ -80,7 +104,7 @@ export default function ExpandableSection({ title, mdPath, subtitle }: Expandabl
         <ExpandMoreIcon sx={{ fontSize: 32 }} />
       </ExpandMore>
 
-      <Typography variant="h6" fontWeight="bold" gutterBottom sx={{ mt: -3 }}>
+      <Typography variant="h6" fontWeight="bold" gutterBottom sx={{ mt: -3, fontSize: {xs: '1.1rem', md: '1.5rem'}, }}>
         {title}
       </Typography>
 

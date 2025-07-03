@@ -14,7 +14,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Accueil />} />
-          <Route path="origines" element={<Histoire />} />
+          <Route path="histoire" element={<Histoire />} />
           <Route path="approches" element={<Approches />} />
           <Route path="niveaux" element={<Niveaux />} />
           <Route path="sagesse" element={<Sagesse />} />

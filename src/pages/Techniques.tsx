@@ -3,20 +3,45 @@ import ExpandableSection from '../components/ExpandableSection'
 
 export default function Techniques() {
   return (
-    <Box sx={{ px: 2, py: 4 }}>
-      <Typography variant="h4" fontWeight="bold" gutterBottom>
-        Techniques
+    <Box sx={{ px: {xs: 0.3, md: 2}, py: 4 }}>
+       <Typography
+        variant="h5"
+        sx={{
+          fontWeight: 700,
+          fontSize: {
+            xs: '1.5rem',
+            md: '2.3rem',
+          },
+          mb: 3,
+          textAlign: 'left',
+          background: 'linear-gradient(90deg,rgb(112, 18, 79),rgb(110, 35, 123),rgb(112, 18, 79))',
+          backgroundSize: '200% auto',
+          backgroundClip: 'text',
+          WebkitBackgroundClip: 'text',
+          color: 'transparent',
+          WebkitTextFillColor: 'transparent',
+        }}
+      >
+       Distances, Techniques et Enchaînements
       </Typography>
 
+
       <ExpandableSection
-        title="Les origines"
-        mdPath="/src/content/histoire/origines.md" subtitle={''}      />
+          id="distances"
+        title="Distances et Techniques de combat en B.S-D."
+        mdPath="/src/content/techniques/distances.md" subtitle={'Les techniques de frappes au bâton.'}      />
       <ExpandableSection
-        title="L’évolution du bâton"
-        mdPath="/src/content/histoire/evolution.md" subtitle={''}      />
+          id="schema"
+        title="Schéma des techniques"
+        mdPath="/src/content/techniques/frappes-baton.md" subtitle={'Les techniques de frappes au bâton.'}      />
       <ExpandableSection
-        title="L’école aujourd’hui"
-        mdPath="/src/content/histoire/ecole.md" subtitle={''}      />
+          id="enchainements"
+        title="Mémo Enchainements"
+        mdPath="/src/content/techniques/enchainements.md" subtitle={''}      />
+      <ExpandableSection
+          id="enerigies"
+        title="Energies"
+        mdPath="/src/content/techniques/energies.md" subtitle={''}      />
     </Box>
   )
 }
