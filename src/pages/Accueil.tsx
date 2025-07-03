@@ -1,5 +1,6 @@
 import {
   Box,
+  Button,
   Card,
   CardActionArea,
   CardContent,
@@ -9,15 +10,15 @@ import { useNavigate } from 'react-router-dom'
 
 const cards = [
   {
-    title: 'Histoire',
+    title: 'Origines',
     description: 'Découvrez les origines du Bâton de Combat. Self-Défense et de son fondateur.',
-    path: '/histoire',
+    path: '/origines',
     image: '/img/histoire.jpg',
   },
   {
-    title: 'Cours',
+    title: 'Approches',
     description: 'Le B.S-D est actuellement enseigné à Toulouse. Découvrez le site web du club!',
-    external: 'https://baton-self.club',
+    path: '/approches',
     image: '/img/cours.jpg',
   },
   {
@@ -50,9 +51,7 @@ export default function Accueil() {
   const navigate = useNavigate()
 
   const handleClick = (card: (typeof cards)[number]) => {
-    if (card.external) {
-      window.open(card.external, '_blank')
-    } else if (card.path) {
+    if (card.path) {
       navigate(card.path)
     }
   }
@@ -62,64 +61,152 @@ export default function Accueil() {
        xs: 1,
        md: 1
     }}}>
-<Typography
-  variant="h5"
+<Box
   sx={{
-     fontWeight: 700,
-    fontSize: {
-       xs: '1.3rem',
-       md: '2rem'
-    },
-    mb: 1,
-    textAlign: 'left',
-    maxWidth: 1100,
+    display: 'flex',
+    flexDirection: { xs: 'column', md: 'row' },
+    alignItems: 'center',
+    justifyContent: 'center',
+    gap: 4,
+    maxWidth: 1200,
     mx: 'auto',
-    background: 'linear-gradient(90deg,rgb(89, 56, 89),rgb(153, 46, 172),rgb(112, 18, 79),rgb(94, 49, 101),rgb(110, 35, 123),rgb(112, 18, 79))',
-    backgroundSize: '200% auto',
-    backgroundClip: 'text',
-    WebkitBackgroundClip: 'text',
-    color: 'transparent',
-    WebkitTextFillColor: 'transparent',
-    animation: 'gradientText 4s ease-in-out infinite',
-    '@keyframes gradientText': {
-      '0%': { backgroundPosition: '0% 50%' },
-      '50%': { backgroundPosition: '100% 50%' },
-      '100%': { backgroundPosition: '0% 50%' },
-    },
+    px: { xs: 0, md: 2 },
+    py: { xs: 2, md: 4 },
   }}
 >
-  Site officiel du B.S-D
-</Typography>
-<Typography
-  variant="h5"
-  sx={{
-     fontWeight: 700,
-    fontSize: {
-       xs: '1.3rem',
-       md: '1.5rem'
-    },
-    mb: 4,
-    textAlign: 'left',
-    maxWidth: 1100,
-    mx: 'auto',
-    background: 'linear-gradient(90deg,rgb(89, 56, 89),rgb(153, 46, 172),rgb(112, 18, 79),rgb(94, 49, 101),rgb(110, 35, 123),rgb(112, 18, 79))',
-    backgroundSize: '200% auto',
-    backgroundClip: 'text',
-    WebkitBackgroundClip: 'text',
-    color: 'transparent',
-    WebkitTextFillColor: 'transparent'
-  }}
->
-Une discipline martiale française combinant deux approches&nbsp;:<br /> le Bâton de Combat et la Self-Défense
+  {/* Left Side: Text */}
+  <Box sx={{ flex: 1 }}>
+    <Typography
+      variant="h5"
+      sx={{
+        fontWeight: 700,
+        fontSize: {
+          xs: '1.3rem',
+          md: '2.3rem',
+        },
+        mb: 1,
+        textAlign: 'left',
+        background: 'linear-gradient(90deg,rgb(112, 18, 79),rgb(110, 35, 123),rgb(112, 18, 79))',
+        backgroundSize: '200% auto',
+        backgroundClip: 'text',
+        WebkitBackgroundClip: 'text',
+        color: 'transparent',
+        WebkitTextFillColor: 'transparent',
+      }}
+    >
+      Site officiel du B.S-D
+    </Typography>
 
-</Typography>
+    <Typography
+      variant="h5"
+      sx={{
+        fontWeight: 700,
+        fontSize: {
+          xs: '1.3rem',
+          md: '1.5rem',
+        },
+        textAlign: 'left',
+        background: 'linear-gradient(90deg,rgb(112, 18, 79),rgb(110, 35, 123),rgb(112, 18, 79))',
+        backgroundSize: '200% auto',
+        backgroundClip: 'text',
+        WebkitBackgroundClip: 'text',
+        color: 'transparent',
+        WebkitTextFillColor: 'transparent',
+      }}
+    >
+      Une discipline martiale française combinant deux approches&nbsp;:<br />
+      le Bâton de Combat et la Self-Défense
+    </Typography>
+  </Box>
+
+  {/* Right Side: Image */}
+  <Box sx={{ flex: 1, textAlign: 'center' }}>
+          <Box
+            sx={{
+              width: {xs:'100%', lg: '90%'},
+              ml: {xs:'0%', lg: '10%'},
+              borderRadius: 3,
+              overflow: 'hidden',
+              cursor: 'pointer',
+              boxShadow: 3,
+              transition: 'transform 0.3s, box-shadow 0.3s',
+              '&:hover': {
+                transform: 'scale(1.02)',
+                boxShadow: 6,
+              },
+            }}
+            onClick={() => window.open("https://baton-self.club", '_blank')}
+          >
+            <Card sx={{ borderRadius: 3, overflow: 'hidden', height: '100%' }}>
+              <CardActionArea sx={{ display: 'flex', flexDirection: 'column', height: '100%' }}>
+                {/* Image section */}
+                <Box
+                  sx={{
+                    width: '100%',
+                    height: {xs: 340, md: 400},
+                    backgroundImage: `url(${'/img/front.png'})`,
+                    backgroundSize: 'cover',
+                    backgroundPosition: 'center',
+                  }}
+                />
+
+                {/* Text section */}
+                <CardContent
+                  sx={{
+                    width: '100%',
+                    backgroundColor: '#6c1aa5',
+                    padding: 2,
+                    pl: 5,
+                    pr: 5,
+                    flexGrow: 1,
+                  }}
+                >
+                  <Typography 
+                    variant="h5"
+                    sx={{
+                      fontWeight: 600,
+                      fontSize: {
+                        xs: '1.3rem',
+                        md: '1.5rem'
+                      },
+                      color:"#28d0f2",
+                      mb: 3
+                      }}>
+                    Le B.S-D est actuellement enseigné à Toulouse !
+                  </Typography>
+                  <Button
+                    variant="contained"
+                    href="https://baton-self.club"
+                    target="_blank"
+                    rel="noopener"
+                    size="large"
+                    sx={{
+                      textTransform: 'none',
+                      fontWeight: 500,
+                      backgroundColor: '#ffffff',
+                      borderRadius: 0,
+                      px: 3,
+                      mb: 2,
+                      color: "#70124f"
+                    }}
+                  >
+                    Découvrez le site web du club
+                  </Button>
+                </CardContent>
+              </CardActionArea>
+            </Card>
+          </Box>
+  </Box>
+</Box>
+
 
       <Box
         sx={{
           display: 'flex',
           flexWrap: 'wrap',
           justifyContent: 'center',
-          gap: 2,
+          gap: 3,
+          mt: 6
         }}
       >
         {cards.map((card) => (
@@ -131,7 +218,6 @@ Une discipline martiale française combinant deux approches&nbsp;:<br /> le Bât
                 sm: 'calc(50% - 16px)',
                 md: 'calc(33.333% - 16px)',
               },
-              height: 200,
               borderRadius: 3,
               overflow: 'hidden',
               cursor: 'pointer',
@@ -144,63 +230,40 @@ Une discipline martiale française combinant deux approches&nbsp;:<br /> le Bât
             }}
             onClick={() => handleClick(card)}
           >
-            <Card
-              sx={{
-                height: '100%',
-                position: 'relative',
-                borderRadius: 3,
-                overflow: 'hidden',
-                cursor: 'pointer',
-                boxShadow: 3,
-                transition: 'transform 0.3s, box-shadow 0.3s',
-                '&:hover': {
-                  transform: 'scale(1.02)',
-                  boxShadow: 6,
-                },
-              }}
-            >
-              <CardActionArea sx={{ height: '100%' }}>
+            <Card sx={{ borderRadius: 3, overflow: 'hidden', height: '100%' }}>
+              <CardActionArea sx={{ display: 'flex', flexDirection: 'column', height: '100%' }}>
+                {/* Image section */}
                 <Box
                   sx={{
-                    position: 'absolute',
-                    inset: 0,
+                    width: '100%',
+                    height: 250,
                     backgroundImage: `url(${card.image})`,
                     backgroundSize: 'cover',
                     backgroundPosition: 'center',
                   }}
                 />
-                <Box
-                  sx={{
-                    position: 'absolute',
-                    bottom: 0,
-                    left: 0,
-                    right: 0,
-                    top: '55%',
-                    background: 'linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,0.6) 100%)',
-                    zIndex: 1,
-                  }}
-                />
 
+                {/* Text section */}
                 <CardContent
                   sx={{
-                    position: 'relative',
-                    zIndex: 2,
-                    color: '#fff',
-                    height: '100%',
-                    display: 'flex',
-                    flexDirection: 'column',
-                    justifyContent: 'flex-end',
+                    width: '100%',
+                    backgroundColor: '#fff',
+                    padding: 2,
+                    flexGrow: 1,
                   }}
                 >
-                  <Typography variant="h6" fontWeight="bold">
+                  <Typography variant="h6" fontWeight="bold" color="text.primary">
                     {card.title}
                   </Typography>
-                  <Typography variant="body2">{card.description}</Typography>
+                  <Typography variant="body2" color="text.secondary">
+                    {card.description}
+                  </Typography>
                 </CardContent>
               </CardActionArea>
             </Card>
           </Box>
         ))}
+
       </Box>
     </Box>
   )

@@ -91,11 +91,6 @@ export default function ExpandableSection({ title, mdPath, subtitle }: Expandabl
           <Box sx={{ mb: 1 }}>
             <ReactMarkdown>{firstParagraph}</ReactMarkdown>
           </Box>
-          {!expanded && (
-            <Typography variant="body2" color="purple" fontStyle="italic">
-              Développer pour en savoir plus...
-            </Typography>
-          )}
         </>
       )}
 

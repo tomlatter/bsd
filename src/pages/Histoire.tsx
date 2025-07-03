@@ -5,7 +5,7 @@ export default function Histoire() {
   return (
     <Box sx={{ px: 2, py: 4 }}>
       <Typography variant="h4" fontWeight="bold" gutterBottom>
-        Histoire
+        Origines
       </Typography>
 
       <ExpandableSection

@@ -17,7 +17,8 @@ import logo from '/img/logo_noir.png'
 
 const navItems = [
   { label: 'Accueil', path: '/' },
-  { label: 'Histoire', path: '/histoire' },
+  { label: 'Origines', path: '/origines' },
+  { label: 'Approches', path: '/approches' },
   { label: 'Techniques', path: '/techniques' },
   { label: 'Niveaux', path: '/niveaux' },
   { label: 'Sagesse', path: '/sagesse' },
@@ -121,8 +122,9 @@ export default function Layout() {
         src={logo}
         alt="Bâton-Self Logo"
         sx={{
-          height: 40,
-          mr: 4,
+          height: 46,
+          position: 'absolute',
+          left: 20
         }}
       />
       <Box>
@@ -135,7 +137,7 @@ export default function Layout() {
               textTransform: 'none',
               fontWeight: 500,
               mx: 1,
-    fontSize: '1.1rem',
+              fontSize: '1.1rem',
               borderRadius: 999,
               bgcolor: location.pathname === item.path ? 'primary.main' : 'transparent',
               color: location.pathname === item.path ? 'primary.contrastText' : 'inherit',

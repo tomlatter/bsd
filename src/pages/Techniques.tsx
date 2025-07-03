@@ -1,30 +1,22 @@
-import { useEffect, useState } from 'react'
-import { Box, Typography, CircularProgress } from '@mui/material'
-import ReactMarkdown from 'react-markdown'
+import { Box, Typography } from '@mui/material'
+import ExpandableSection from '../components/ExpandableSection'
 
 export default function Techniques() {
-  const [content, setContent] = useState<string>('')
-
-  useEffect(() => {
-    fetch('/src/content/techniques.md')
-      .then((res) => res.text())
-      .then(setContent)
-      .catch(() => setContent('Erreur lors du chargement des techniques.'))
-  }, [])
-
   return (
-    <Box>
-      <Typography variant="h4" gutterBottom fontWeight="bold">
+    <Box sx={{ px: 2, py: 4 }}>
+      <Typography variant="h4" fontWeight="bold" gutterBottom>
         Techniques
       </Typography>
 
-      {content ? (
-        <Box sx={{ mt: 2 }}>
-          <ReactMarkdown>{content}</ReactMarkdown>
-        </Box>
-      ) : (
-        <CircularProgress />
-      )}
+      <ExpandableSection
+        title="Les origines"
+        mdPath="/src/content/histoire/origines.md" subtitle={''}      />
+      <ExpandableSection
+        title="L’évolution du bâton"
+        mdPath="/src/content/histoire/evolution.md" subtitle={''}      />
+      <ExpandableSection
+        title="L’école aujourd’hui"
+        mdPath="/src/content/histoire/ecole.md" subtitle={''}      />
     </Box>
   )
 }
