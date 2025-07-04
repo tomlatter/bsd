@@ -1,40 +1,47 @@
-# Les Couleurs du B.S-D sont :
+## Les Couleurs du B.S-D sont :
 
-Blanc : Humilité
+- **Blanc** : Humilité  
+- **Noir** : Technique  
+- **Violet** : Spiritualité
 
-Noir : Technique
+---
 
-Violet : Spiritualité
+## Le B.S-D comporte :
 
-Le B.S-D comporte : 
+- Le Protocole  
+- Quatre niveaux Techniques  
+- Trois niveaux Pédagogiques  
+- Deux niveaux de Recherche  
+- Un niveau Technique, Pédagogique, Philosophique et de Recherche  
+- Un niveau Spirituel : Esprit du B.S-D (Conseil des Sages)
 
-Le Protocole
-Quatre niveaux Techniques
-Trois niveaux Pédagogiques
-Deux niveaux de Recherche
-Un niveau Technique, Pédagogique, Philosophique et de Recherche
-Un niveau Spirituel : Esprit du B.S-D (Conseil des Sages)
-Le Bâton de combat est l'Art Martial du B.S-D, comportant des techniques de défense, d'attaque, de contre-attaque, des enchaînements techniques, des enchaînements codifiés, ainsi que des bottes.
-La Self-Défense à mains nues est la partie pratique du B.S-D, simple, rapide, efficace.
+---
 
-Termes utilisés en B.S-D:
+> Le Bâton de combat est l'Art Martial du B.S-D, comportant des techniques de défense, d'attaque, de contre-attaque, des enchaînements techniques, des enchaînements codifiés, ainsi que des bottes.  
+> La Self-Défense à mains nues est la partie pratique du B.S-D, simple, rapide, efficace.
 
-Fustigeur : Pratiquant de B.S-D Bâton de combat,
-Canne de défense et Self-Défense.
-Fustigeuse : Pratiquante de B.S-D Bâton de combat,
-Canne de défense et Self-Défense.
+---
 
-Selfiste : Pratiquant de B.S-D Self-Défense.
-Selfiste : Pratiquante de B.S-D Self-Défense.
+## Termes utilisés en B.S-D :
 
-Bâtonneur : Joueur de Bâton
-(Partenaire du Fustigeur dans les enchaînements techniques).
-Bâtonneuse : Joueuse de Bâton
-(Partenaire de la Fustigeuse dans les enchaînements techniques).
+- **Fustigeur** : Pratiquant de B.S-D Bâton de combat,  
+  Canne de défense et Self-Défense.  
 
-Bâtonniste : Terme général, pratiquant de Bâton utilisé comme arme.
-Bâtonniste : Terme général, pratiquante de Bâton utilisé comme arme.
-(Maîtres Bâtonnistes français du 19, 20 et 21ème siècle).
+- **Fustigeuse** : Pratiquante de B.S-D Bâton de combat,  
+  Canne de défense et Self-Défense.  
 
-Canniste : Terme général, pratiquant de Canne de combat.
-Canniste : Terme général, pratiquante de Canne de combat.
+- **Selfiste** : Pratiquant de B.S-D Self-Défense.  
+- **Selfiste** : Pratiquante de B.S-D Self-Défense.  
+
+- **Bâtonneur** : Joueur de Bâton  
+  _(Partenaire du Fustigeur dans les enchaînements techniques)._  
+
+- **Bâtonneuse** : Joueuse de Bâton  
+  _(Partenaire de la Fustigeuse dans les enchaînements techniques)._  
+
+- **Bâtonniste** : Terme général, pratiquant de Bâton utilisé comme arme.  
+- **Bâtonniste** : Terme général, pratiquante de Bâton utilisé comme arme.  
+  _(Maîtres Bâtonnistes français du 19, 20 et 21ème siècle)._  
+
+- **Canniste** : Terme général, pratiquant de Canne de combat.  
+- **Canniste** : Terme général, pratiquante de Canne de combat.

@@ -1,103 +1,129 @@
-Pour le Bâton long, les premiers cours portent sur les techniques de base et les déplacements.
-Pour la Self-Défense, les premiers cours portent sur le travail des poings, des pieds et les dégagements sur saisies debout.
-L'âge n'a aucune importance, c'est la motivation qui compte.
+## Premiers cours
 
-Tout est possible : de la distance longue à la distance courte.
+- **Bâton long** : techniques de base et déplacements  
+- **Self-Défense** : travail des poings, des pieds et dégagements sur saisies debout  
+- **Âge** : aucune importance — **seule la motivation compte**  
+- _Tout est possible_ : de la **distance longue** à la **distance courte**
 
-Voici, en règle générale, les différentes possibilités d’étude en BSD (Bâton de combat. Self-Défense).
-Cette classification ne veut pas dire que les techniques sont étudiées dans cet ordre, mais classées par distance de combat.
-Il faut savoir par exemple, qu’il n’est pas possible de faire de combats avec équipements, si les bases du combat avec armes ne sont pas acquises.
+---
 
-Distance d’arme longue Bâton de combat de 1m50 à 1m60
+## Étude progressive en BSD  
+(_Bâton de combat – Self-Défense_)
 
-Bâton de combat : Techniques – Parades – Contres - (bâton bois : rotin)
-Assauts d’entraide bâton bois (rotin)
-Assauts libres bâton bois (rotin)
-Enchaînements techniques (rotin)
-Bottes (rotin)
-Enchaînements codifiés (rotin)
-Combats avec équipements (bâtons rotin protégés)
-Distance d’arme moyenne Canne de combat de 1m à 1m20
+Cette classification est faite **par distance de combat**, **pas dans l’ordre d’apprentissage**.  
+👉 Il est **indispensable de maîtriser les bases** du combat avec armes **avant** de passer aux combats avec équipements.
 
-Canne de combat : Techniques – Parades – Contres (bâton bois : rotin)
-Assauts d’entraide canne pvc-mousse
-Assauts libres canne pvc-mousse
-Assauts d’entraide canne bois (rotin)
-Assauts libres canne bois (rotin)
-Combats avec équipements canne pvc-mousse
-Distance d’arme moyenne Sabre de bois :1m
+---
 
-Sabre en bois (boken) Techniques – Parades – Contres
-Assauts sabre pvc-mousse
-Assauts sabre en bois (boken)
-Distance d’armes courtes Bâton court de 0m60 à 0m75 et Double Bâtons courts
+### 🟢 Distance d’arme longue  
+**Bâton de combat (1,50 m à 1,60 m)**
 
-Bâton court Techniques – Parades – Contres (bâton bois : rotin)
-Double Bâtons courts Techniques – Parades – Contres (bâtons bois : rotin)
-Assauts d’entraide Bâton(s) court(s) pvc-mousse
-Assauts libres Bâton(s) court(s) pvc-mousse
-Assauts d’entraide Bâton(s) court(s) bois (rotin)
-Assauts libres Bâton(s) court(s) bois (rotin)
-Combats avec équipements Bâton(s) court(s) pvc-mousse
-Distance d’armes courtes Couteau
+- Techniques – Parades – Contres _(bâton bois : rotin)_  
+- Assauts d’entraide bâton bois  
+- Assauts libres bâton bois  
+- Enchaînements techniques  
+- Bottes  
+- Enchaînements codifiés  
+- Combats avec équipements _(bâtons rotin protégés)_
 
-Couteau Techniques – Parades – Contres (couteau bois) (Soit esquives, soit opportunités, soit avec un bâton court)
-Assauts d’entraide couteau pvc-mousse
-Assauts libre couteau pvc-mousse
-Assauts d’entraide couteau bois
-Assauts libres couteau bois
-Assauts libres Couteau pvc-mousse contre Bâton court pvc-mousse
-Combats avec équipements Couteau pvc-mousse
-Distance de pieds
+---
 
-Techniques de Coups de pieds
-Parades et Contres sur coup de pieds
-Assauts d’entraide
-Assauts debout avec amenées au sol
-Assauts libres
-Combats avec protections
-Distance de poings
+### 🟡 Distance d’arme moyenne  
+**Canne de combat (1 m à 1,20 m)**
 
-Techniques de Coups de poings
-Parades et Contres sur coups de poing
-Atémis (tranchants de mains, revers de mains etc …)
-Parades et Contres sur Atémis
-Saisies
-Dégagements et Contres sur saisies
-Assauts d’entraide avec et sans gants
-Assauts debout avec amenées au sol, avec et sans les gants
-Assauts libres avec et sans gants
-Combats avec protections
-Distance rapprochée 
+- Techniques – Parades – Contres _(bâton bois : rotin)_  
+- Assauts d’entraide canne pvc-mousse  
+- Assauts libres canne pvc-mousse  
+- Assauts d’entraide canne bois  
+- Assauts libres canne bois  
+- Combats avec équipements canne pvc-mousse
 
-Coups de tête
-Parades et Contres sur coups de tête
-Coups de coudes
-Contrôles et Contres sur coups de coude
-Coups de genoux
-Parades et Contres sur coups de genoux
-Clés
-Dégagements et Contres sur clés
-Etranglements
-Parades et Contres sur étranglements
-Distance courte : debout
+---
 
-Amenées au sol
-Parades et Contres sur amenées au sol
-Projections
-Parades et Contres sur projections
-Assauts d’Entraide
-Assauts libres
-Combats sur tapis (tatamis)
-Distance courte : sol
+### 🟠 Distance d’arme moyenne  
+**Sabre de bois (Boken – 1 m)**
 
-Contrôles au sol et immobilisations
-Dégagements sur contrôles au sol et immobilisations
-Renversements
-Clés
-Dégagements et contres sur clés
-Etranglements
-Parades et Contres sur étranglements
-Coups au sol
-Parades et Contres sur coups au sol
-Combats au sol sur tapis (tatamis)
+- Techniques – Parades – Contres  
+- Assauts sabre pvc-mousse  
+- Assauts sabre en bois
+
+---
+
+### 🔵 Distance d’armes courtes  
+**Bâton court (0,60 m à 0,75 m)** & **Double bâtons courts**
+
+- Techniques – Parades – Contres _(bois : rotin)_  
+- Assauts d’entraide pvc-mousse  
+- Assauts libres pvc-mousse  
+- Assauts d’entraide bois  
+- Assauts libres bois  
+- Combats avec équipements pvc-mousse
+
+---
+
+### 🔴 Distance d’armes courtes  
+**Couteau**
+
+- Techniques – Parades – Contres _(couteau bois ou avec bâton court)_  
+- Assauts d’entraide couteau pvc-mousse  
+- Assauts libres couteau pvc-mousse  
+- Assauts d’entraide couteau bois  
+- Assauts libres couteau bois  
+- Couteau pvc-mousse contre bâton court pvc-mousse  
+- Combats avec équipements couteau pvc-mousse
+
+---
+
+### 🟣 Distance de pieds
+
+- Techniques de coups de pied  
+- Parades & contres  
+- Assauts d’entraide  
+- Assauts debout avec amenées au sol  
+- Assauts libres  
+- Combats avec protections
+
+---
+
+### 🟤 Distance de poings
+
+- Techniques de coups de poing  
+- Parades & contres  
+- Atémis (_tranchants de main, revers de main, etc._)  
+- Parades & contres sur atémis  
+- Saisies, dégagements, contres  
+- Assauts avec ou sans gants  
+- Amenées au sol avec ou sans gants  
+- Assauts libres  
+- Combats avec protections
+
+---
+
+### ⚫ Distance rapprochée
+
+- Coups de tête, coudes, genoux : parades, contrôles, contres  
+- Clés : dégagements, contres  
+- Étranglements : parades, contres
+
+---
+
+### ⚪ Distance courte : debout
+
+- Amenées au sol  
+- Projections  
+- Parades & contres  
+- Assauts d’entraide  
+- Assauts libres  
+- Combats sur tapis (tatamis)
+
+---
+
+### ⚫ Distance courte : sol
+
+- Contrôles & immobilisations  
+- Dégagements  
+- Renversements  
+- Clés & contre-clés  
+- Étranglements  
+- Coups au sol & parades  
+- Combats au sol sur tapis (tatamis)

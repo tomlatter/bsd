@@ -1,14 +1,24 @@
 ![Alt text](/img/schema-techniques.jpg)
 
-Ces techniques de frappes au bâton sont également appelées "en Moulinets" ou  "à la volée". Toutes ces techniques ont leur parades et leurs contre. Ce sont les sept angles d'attaque classiques de base. 
+---
 
-Il existe également des "Bottes" en B.S-D. Ce sont des techniques de contre en déplacement, plus complexes que les déplacements et les contres de base.
-Quelques noms :
+## Techniques de frappe au bâton  
+**Aussi appelées _« en moulinets »_ ou _« à la volée »_**
 
-"Portugaise"
-"Toulousaine"
-"En Passant"
-"Pique"
-"Biaisée Longue"
-"Biaisée courte"
-"Rotation"
+Ces techniques constituent les **sept angles d’attaque classiques de base**.  
+Chacune possède ses **parades** et ses **contres**.
+
+---
+
+## Les « Bottes » en B.S-D  
+Ce sont des techniques de contre en déplacement, **plus complexes** que les contres ou déplacements de base.
+
+**Quelques noms de bottes :**
+
+- _Portugaise_  
+- _Toulousaine_  
+- _En Passant_  
+- _Pique_  
+- _Biaisée longue_  
+- _Biaisée courte_  
+- _Rotation_

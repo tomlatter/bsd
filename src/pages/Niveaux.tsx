@@ -73,9 +73,15 @@ export default function Niveaux() {
         />
         <ExpandableSection
           id="esprit-du-bsd"
-          title="Niveau 10 : Esprit du B.S-D "
+          title="Niveau 10 : Gardien de la Voie"
           subtitle="Un niveau Spirituel (Conseil des Sages)"
           mdPath="/src/content/niveaux/10.md"
+        />
+        <ExpandableSection
+          id="evaluation"
+          title="Evaluation et Niveaux"
+          subtitle="Les Unités de Valeur du B.S-D"
+          mdPath="/src/content/niveaux/evaluation.md"
         />
       </Box>
     </Box>

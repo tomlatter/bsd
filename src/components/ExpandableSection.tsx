@@ -6,6 +6,7 @@ import {
   IconButton,
   CircularProgress,
   Box,
+  Link
 } from '@mui/material'
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore'
 import ReactMarkdown from 'react-markdown'
@@ -135,7 +136,57 @@ export default function ExpandableSection({ title, mdPath, subtitle, id }: Expan
 
       <Collapse in={expanded} timeout="auto" unmountOnExit>
         <Box sx={{ mt: 2 }}>
-          <ReactMarkdown>{content}</ReactMarkdown>
+          <ReactMarkdown
+            components={{
+              h1: ({ node, ...props }) => (
+                <Typography variant="h4" gutterBottom sx={{ mt: 4, mb: 2, fontWeight: 'bold' }} {...props} />
+              ),
+              h2: ({ node, ...props }) => (
+                <Typography variant="h5" gutterBottom sx={{ mt: 4, mb: 2, fontWeight: 600, color: 'primary.main' }} {...props} />
+              ),
+              h3: ({ node, ...props }) => (
+                <Typography variant="h6" gutterBottom sx={{ mt: 3, mb: 1.5, fontWeight: 500 }} {...props} />
+              ),
+              p: ({ node, ...props }) => (
+                <Typography variant="body1" paragraph sx={{ mt: 1.5 }} {...props} />
+              ),
+              ul: ({ node, ...props }) => (
+                <Box component="ul" sx={{ pl: 4, mt: 1.5, mb: 2, listStyleType: 'disc' }} {...props} />
+              ),
+              ol: ({ node, ...props }) => (
+                <Box component="ol" sx={{ pl: 4, mt: 1.5, mb: 2, listStyleType: 'decimal' }} {...props} />
+              ),
+              li: ({ node, ...props }) => (
+                <Box component="li" sx={{ mb: 1 }} {...props} />
+              ),
+              a: ({ node, ...props }) => (
+                <Link href={props.href} target="_blank" rel="noopener noreferrer" sx={{ color: 'primary.dark', fontWeight: 500 }}>
+                  {props.children}
+                </Link>
+              ),
+              img: ({ node, ...props }) => (
+                <Box component="img" {...props} sx={{ display: 'block', margin: '1rem auto', maxWidth: '100%', borderRadius: 2 }} />
+              ),
+              blockquote: ({ node, ...props }) => (
+                <Box
+                  component="blockquote"
+                  sx={{
+                    fontStyle: 'italic',
+                    borderLeft: '4px solid',
+                    borderColor: 'primary.light',
+                    pl: 2,
+                    my: 3,
+                    color: 'text.secondary',
+                  }}
+                >
+                  {props.children}
+                </Box>
+              ),
+            }}
+          >
+            {content}
+          </ReactMarkdown>
+
         </Box>
       </Collapse>
     </Card>
