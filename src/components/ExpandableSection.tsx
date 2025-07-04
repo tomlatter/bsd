@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useRef } from 'react'
 import {
   Card,
   Collapse,
@@ -32,53 +32,65 @@ export default function ExpandableSection({ title, mdPath, subtitle, id }: Expan
   const [expanded, setExpanded] = useState(false)
   const [content, setContent] = useState('')
   const [loading, setLoading] = useState(true)
+  const cardRef = useRef<HTMLDivElement | null>(null)
 
   const handleToggle = (e: React.MouseEvent) => {
     e.stopPropagation()
     const next = !expanded
     setExpanded(next)
-
     if (next) {
       window.history.pushState(null, '', `#${id}`)
     }
   }
 
+  // Fetch content
   useEffect(() => {
     fetch(mdPath)
       .then((res) => res.text())
       .then((text) => {
         setContent(text)
         setLoading(false)
-
-        // Auto-expand if hash matches this section's ID
-        if (window.location.hash === `#${id}`) {
-          setExpanded(true)
-          // Scroll to this section (optional)
-          document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' })
-        }
       })
       .catch(() => {
         setContent('Erreur lors du chargement du contenu.')
         setLoading(false)
       })
-  }, [mdPath, id])
+  }, [mdPath])
+
+  // Auto-expand if URL hash matches
+  useEffect(() => {
+    const hash = window.location.hash.slice(1)
+    if (hash === id) {
+      setExpanded(true)
+    }
+  }, [id])
+
+  // Scroll only after expand + loading
+  useEffect(() => {
+    const hash = window.location.hash.slice(1)
+    if (expanded && !loading && hash === id && cardRef.current) {
+      setTimeout(() => {
+        const top = cardRef.current!.getBoundingClientRect().top + window.scrollY - 20
+        window.scrollTo({ top, behavior: 'smooth' })
+      }, 200)
+    }
+  }, [expanded, loading, id])
 
 
-  const firstParagraph = subtitle
-  
   return (
     <Card
+      ref={cardRef}
       id={id}
       sx={{
         mb: 2,
         border: !expanded ? '1px solid #ccc' : '3px solid #70124f',
-        maxHeight: !expanded ? '120px' : null,
+        maxHeight: !expanded ? '120px' : undefined,
         cursor: 'pointer',
         position: 'relative',
-        px: {xs: 3, md: 4},
+        px: { xs: 3, md: 4 },
         pt: 5,
         pb: 2,
-        '&:hover': { backgroundColor: !expanded ? 'rgba(0,0,0,0.02)' : '#fff'},
+        '&:hover': { backgroundColor: !expanded ? 'rgba(0,0,0,0.02)' : '#fff' },
       }}
       onClick={() => {
         const next = !expanded
@@ -104,18 +116,21 @@ export default function ExpandableSection({ title, mdPath, subtitle, id }: Expan
         <ExpandMoreIcon sx={{ fontSize: 32 }} />
       </ExpandMore>
 
-      <Typography variant="h6" fontWeight="bold" gutterBottom sx={{ mt: -3, fontSize: {xs: '1.1rem', md: '1.5rem'}, }}>
+      <Typography
+        variant="h6"
+        fontWeight="bold"
+        gutterBottom
+        sx={{ mt: -3, fontSize: { xs: '1.1rem', md: '1.5rem' } }}
+      >
         {title}
       </Typography>
 
       {loading ? (
         <CircularProgress />
       ) : (
-        <>
-          <Box sx={{ mb: 1 }}>
-            <ReactMarkdown>{firstParagraph}</ReactMarkdown>
-          </Box>
-        </>
+        <Box sx={{ mb: 1 }}>
+          <ReactMarkdown>{subtitle}</ReactMarkdown>
+        </Box>
       )}
 
       <Collapse in={expanded} timeout="auto" unmountOnExit>
