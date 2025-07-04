@@ -26,15 +26,15 @@ export default function Origines() {
       </Typography>
 
       <ExpandableSection
-          id=""
+          id="presentation"
         title="Présentation du B.S-D"
         mdPath="/src/content/origines/presentation.md" subtitle={''}      />
       <ExpandableSection
-          id=""
+          id="origines"
         title="Origines du B.S-D"
         mdPath="/src/content/origines/presentation.md" subtitle={"D'où vient le B.S-D ?"}      />
       <ExpandableSection
-          id=""
+          id="le-griot"
         title="Le Griot Fustigeur"
         mdPath="/src/content/origines/griot.md" subtitle={"Le livre autobiographique du fondateur du B.S-D"}      />
     </Box>
