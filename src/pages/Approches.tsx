@@ -28,7 +28,7 @@ export default function Approches() {
       <ExpandableSection
         id="initiation"
         title="Initiation"
-        mdPath="/src/content/approches/initiation.md" subtitle={''}      />
+        mdPath="/src/content/approches/initiation.md" subtitle={'Franchir la porte : premier pas vers la confiance et la maîtrise'}      />
 
       <ExpandableSection
           id="etre-bien"
@@ -40,11 +40,11 @@ export default function Approches() {
       <ExpandableSection
         id="bsd-au-feminin"
         title="Le B.S-D au féminin"
-        mdPath="/src/content/approches/bsd-au-feminin.md" subtitle={''}      />
+        mdPath="/src/content/approches/bsd-au-feminin.md" subtitle={' Quand la technique surpasse la force : le B.S-D comme levier d’égalité '}      />
 
       <ExpandableSection
         id="legitime-defense"
-        title="Le Légitime Defense"
+        title="La Légitime Defense"
         mdPath="/src/content/approches/legitime-defense.md" subtitle={'Ce que dit la loi'}      />
     </Box>
   )

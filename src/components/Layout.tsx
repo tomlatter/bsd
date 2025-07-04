@@ -40,7 +40,7 @@ export default function Layout() {
   }
 
   return (
-      <Box sx={{ position: 'relative', minHeight: '100vh', overflowX: 'hidden' }}>
+      <Box sx={{ position: 'relative', minHeight: '100vh' }}>
     {/* Background image layer */}
     <Box
       sx={{

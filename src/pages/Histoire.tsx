@@ -4,7 +4,7 @@ import ExpandableSection from '../components/ExpandableSection'
 export default function Origines() {
   return (
     <Box sx={{ px: {xs: 0.3, md: 2}, py: 4 }}>
-             <Typography
+      <Typography
         variant="h5"
         sx={{
           fontWeight: 700,
@@ -28,7 +28,7 @@ export default function Origines() {
       <ExpandableSection
           id="presentation"
         title="Présentation du B.S-D"
-        mdPath="/src/content/origines/presentation.md" subtitle={''}      />
+        mdPath="/src/content/origines/presentation.md" subtitle={'Une discipline moderne nourrie d’héritages anciens'}      />
       <ExpandableSection
           id="origines"
         title="Origines du B.S-D"

@@ -28,8 +28,8 @@ export default function Techniques() {
 
       <ExpandableSection
           id="distances"
-        title="Distances et Techniques de combat en B.S-D."
-        mdPath="/src/content/techniques/distances.md" subtitle={'Les techniques de frappes au bâton.'}      />
+        title="Distances et Techniques"
+        mdPath="/src/content/techniques/distances.md" subtitle={'Distances et Techniques de combat en B.S-D.'}      />
       <ExpandableSection
           id="schema"
         title="Schéma des techniques"
@@ -37,11 +37,11 @@ export default function Techniques() {
       <ExpandableSection
           id="enchainements"
         title="Mémo Enchainements"
-        mdPath="/src/content/techniques/enchainements.md" subtitle={''}      />
+        mdPath="/src/content/techniques/enchainements.md" subtitle={'Les enchaînements techniques et codifés au bâton.'}      />
       <ExpandableSection
           id="enerigies"
         title="Energies"
-        mdPath="/src/content/techniques/energies.md" subtitle={''}      />
+        mdPath="/src/content/techniques/energies.md" subtitle={'Energie interne - Energie externe'}      />
     </Box>
   )
 }

@@ -70,9 +70,9 @@ export default function ExpandableSection({ title, mdPath, subtitle, id }: Expan
     const hash = window.location.hash.slice(1)
     if (expanded && !loading && hash === id && cardRef.current) {
       setTimeout(() => {
-        const top = cardRef.current!.getBoundingClientRect().top + window.scrollY - 20
+        const top = cardRef.current!.getBoundingClientRect().top + window.scrollY - 79
         window.scrollTo({ top, behavior: 'smooth' })
-      }, 200)
+      }, 300)
     }
   }, [expanded, loading, id])
 
