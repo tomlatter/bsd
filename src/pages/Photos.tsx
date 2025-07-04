@@ -9,30 +9,37 @@ const BATCH_SIZE = 20;
 const imageFilenames = Array.from({ length: TOTAL_IMAGES }, (_, i) => `${i + 1}.jpg`);
 const imageUrls = imageFilenames.map((name) => `/photos/${name}`);
 
-function loadImageDimensions(src: string): Promise<{ src: string; width: number; height: number }> {
+type Photo = { src: string; width: number; height: number };
+
+function loadImageDimensions(src: string): Promise<Photo | null> {
   return new Promise((resolve) => {
     const img = new Image();
     img.src = src;
     img.onload = () =>
       resolve({ src, width: img.naturalWidth, height: img.naturalHeight });
+    img.onerror = () => {
+      console.warn("Could not load", src);
+      resolve(null); // don't reject to avoid stopping all loading
+    };
   });
 }
 
 export default function MyGallery() {
-  const [photos, setPhotos] = useState<{ src: string; width: number; height: number }[]>([]);
+  const [photos, setPhotos] = useState<Photo[]>([]);
   const [index, setIndex] = useState<number>(-1);
   const [loadedCount, setLoadedCount] = useState(0);
   const loaderRef = useRef<HTMLDivElement | null>(null);
 
   const loadNextBatch = useCallback(async () => {
     const nextBatch = imageUrls.slice(loadedCount, loadedCount + BATCH_SIZE);
-    const loaded = await Promise.all(nextBatch.map((src) => loadImageDimensions(src)));
-    setPhotos((prev) => [...prev, ...loaded]);
+    const loaded = await Promise.all(nextBatch.map(loadImageDimensions));
+    const validPhotos = loaded.filter((p): p is Photo => p !== null);
+    setPhotos((prev) => [...prev, ...validPhotos]);
     setLoadedCount((prev) => prev + BATCH_SIZE);
   }, [loadedCount]);
 
   useEffect(() => {
-    loadNextBatch(); 
+    loadNextBatch();
   }, []);
 
   useEffect(() => {
