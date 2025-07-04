@@ -40,9 +40,9 @@ const cards = [
     image: '/img/sagesse.jpg',
   },
   {
-    title: 'Archives',
-    description: 'Photos, vidéos et souvenirs',
-    path: '/archives',
+    title: 'Photos',
+    description: 'Plus de 40 ans de photos et souvenirs',
+    path: '/photos',
     image: '/img/archives.png',
   },
 ]

@@ -5,7 +5,7 @@ import Histoire from './pages/Histoire'
 import Sagesse from './pages/Sagesse'
 import Niveaux from './pages/Niveaux'
 import Techniques from './pages/Techniques'
-import Archives from './pages/Archives'
+import Photos from './pages/Photos'
 import Approches from './pages/Approches'
 
 function App() {
@@ -19,7 +19,7 @@ function App() {
           <Route path="niveaux" element={<Niveaux />} />
           <Route path="sagesse" element={<Sagesse />} />
           <Route path="techniques" element={<Techniques />} />
-          <Route path="archives" element={<Archives />} />
+          <Route path="photos" element={<Photos />} />
         </Route>
       </Routes>
     </Router>

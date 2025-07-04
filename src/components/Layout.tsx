@@ -22,7 +22,7 @@ const navItems = [
   { label: 'Techniques', path: '/techniques' },
   { label: 'Niveaux', path: '/niveaux' },
   { label: 'Sagesse', path: '/sagesse' },
-  { label: 'Archives', path: '/archives' },
+  { label: 'Photos', path: '/photos' },
 ]
 
 export default function Layout() {
