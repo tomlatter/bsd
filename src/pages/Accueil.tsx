@@ -11,13 +11,13 @@ import { useNavigate } from 'react-router-dom'
 const cards = [
   {
     title: 'Origines',
-    description: 'Découvrez les origines du Bâton de Combat. Self-Défense et de son fondateur.',
+    description: 'Découvrez les origines de la discipline et de son fondateur.',
     path: '/origines',
     image: '/img/histoire.jpg',
   },
   {
     title: 'Cours',
-    description: 'Le B.S-D est actuellement enseigné à Toulouse. Toutes les infos pour nous rejoindre.',
+    description: "Le B.S-D est actuellement enseigné à Toulouse avec cours d'essai gratuits.",
     path: '/cours',
     image: '/img/cours.jpg',
   },
@@ -35,13 +35,13 @@ const cards = [
   },
   {
     title: 'Sagesse',
-    description: 'Paroles et principes qui guident la pratique.',
+    description: 'Principes qui guident la pratique.',
     path: '/sagesse',
     image: '/img/sagesse.jpg',
   },
   {
     title: 'Photos',
-    description: 'Plus de 40 ans de photos et souvenirs',
+    description: 'Plus de 40 ans de souvenirs.',
     path: '/photos',
     image: '/img/archives.png',
   },
@@ -97,26 +97,34 @@ export default function Accueil() {
       Site officiel du B.S-D
     </Typography>
 
-    <Typography
+ <Typography
       variant="h5"
       sx={{
-        fontWeight: 700,
-        fontSize: {
-          xs: '1rem',
-          md: '1.5rem',
-        },
-        textAlign: 'left',
-        background: 'linear-gradient(90deg,rgb(112, 18, 79),rgb(110, 35, 123),rgb(112, 18, 79))',
-        backgroundSize: '200% auto',
-        backgroundClip: 'text',
-        WebkitBackgroundClip: 'text',
-        color: 'transparent',
-        WebkitTextFillColor: 'transparent',
+        color: 'text.primary',
+        mb: 2,
+        fontSize: { xs: '1.2rem', md: '1.6rem' },
+        fontWeight: 500,
       }}
     >
-      Une discipline martiale française combinant deux approches&nbsp;:<br />
-      le Bâton de Combat et la Self-Défense
+      Une discipline martiale combinant <br />
+      <strong>Bâton de Combat</strong> et <strong>Self-Défense</strong>
     </Typography>
+
+  <Typography
+    variant="body1"
+    sx={{
+      color: "text.secondary",
+      fontSize: { xs: "1rem", md: "1.5rem" },
+      maxWidth: 500,
+      mt: 6,
+      mx: { xs: "auto", md: 0 },
+    }}
+  >
+    Développez votre confiance, améliorez vos capacités techniques 
+    et découvrez une approche moderne du combat et de la défense.
+  </Typography>
+
+
   </Box>
 
   {/* Right Side: Image */}
@@ -202,7 +210,131 @@ export default function Accueil() {
           </Box>
   </Box>
 </Box>
+<Box sx={{ maxWidth: 900, mx: "auto", textAlign: "center", mt: 6, px: 2 }}>
+  {/* Heading */}
+  <Typography
+    variant="h5"
+    sx={{
+      fontWeight: 700,
+      mb: 3,
+      color: "primary.main",
+    }}
+  >
+    Une Tradition Ancienne, Une Discipline Moderne
+  </Typography>
 
+  {/* First paragraph */}
+  <Typography
+    variant="body1"
+    sx={{
+      fontSize: { xs: "1rem", md: "1.15rem" },
+      lineHeight: 1.8,
+      color: "text.secondary",
+      mb: 3,
+    }}
+  >
+    <strong>Le combat au bâton long</strong> existe partout dans le monde
+    depuis que l’Homme existe. En France, il fut un compagnon fidèle au
+    Moyen-Âge : aide à la marche, franchissement de rivières, défense contre
+    l’agression. Enseigné dans <strong>l’armée napoléonienne</strong>, il a
+    traversé les siècles grâce à des maîtres passionnés.
+  </Typography>
+
+  {/* Divider for visual break */}
+  <Box sx={{ width: 80, height: 3, backgroundColor: "primary.main", mx: "auto", my: 4, borderRadius: 2 }} />
+
+  {/* Second paragraph */}
+  <Typography
+    variant="body1"
+    sx={{
+      fontSize: { xs: "1rem", md: "1.15rem" },
+      lineHeight: 1.8,
+      color: "text.secondary",
+    }}
+  >
+    Créé à <strong>Toulouse</strong> par <strong>Jean Louis Brinker</strong> en
+    1980, le <strong>B.S-D</strong> s’inscrit dans cette tradition française.
+    Cette discipline s’adresse aux femmes, hommes, ados et adultes, en
+    proposant des techniques réalistes, efficaces et accessibles.
+  </Typography>
+</Box>
+ <Box
+      sx={{
+        display: "flex",
+        flexDirection: { xs: "column", sm: "row" }, // Stack on mobile
+        gap: 3,
+        mt: 4,
+        justifyContent: "center",
+      }}
+    >
+      {/* Card 1: Bâton de Combat */}
+      <Card
+        sx={{
+          flex: 1,
+          maxWidth: 400,
+          boxShadow: 0,
+          borderRadius: 2,
+        }}
+      >
+        <CardContent sx={{ textAlign: "center", p: 3 }}>
+          <Typography
+            variant="h6"
+            sx={{
+              color: "#70124f", // Purple title
+              fontWeight: 700,
+              mb: 2,
+            }}
+          >
+            Bâton de Combat
+          </Typography>
+          <Typography
+            variant="body1"
+            sx={{
+              fontSize: { xs: "0.95rem", md: "1.05rem" },
+              color: "text.secondary",
+              lineHeight: 1.6,
+            }}
+          >
+            Art martial, recherche de la perfection technique en combat au
+            Bâton long et à la Canne de défense.
+          </Typography>
+        </CardContent>
+      </Card>
+
+      {/* Card 2: Self-Défense */}
+      <Card
+        sx={{
+          flex: 1,
+          maxWidth: 400,
+          boxShadow: 0,
+          borderRadius: 2,
+        }}
+      >
+        <CardContent sx={{ textAlign: "center", p: 3 }}>
+          <Typography
+            variant="h6"
+            sx={{
+              color: "#70124f", // Purple title
+              fontWeight: 700,
+              mb: 2,
+            }}
+          >
+            Self-Défense
+          </Typography>
+          <Typography
+            variant="body1"
+            sx={{
+              fontSize: { xs: "0.95rem", md: "1.05rem" },
+              color: "text.secondary",
+              lineHeight: 1.6,
+            }}
+          >
+            Apprendre à se défendre pour se protéger soi et les autres afin de
+            stopper la violence, ou au moins ne pas la subir.
+          </Typography>
+        </CardContent>
+      </Card>
+    </Box>
 
       <Box
         sx={{
@@ -259,7 +391,10 @@ export default function Accueil() {
                   <Typography variant="h6" fontWeight="bold" color="text.primary">
                     {card.title}
                   </Typography>
-                  <Typography variant="body2" color="text.secondary">
+                  <Typography variant="body2" color="text.secondary"
+                    sx={{
+                      fontSize: { xs: "0.95rem", md: "1.05rem" }
+                    }}>
                     {card.description}
                   </Typography>
                 </CardContent>
