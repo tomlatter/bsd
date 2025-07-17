@@ -14,11 +14,12 @@ import MenuIcon from '@mui/icons-material/Menu'
 import { Link, Outlet, useLocation } from 'react-router-dom'
 import { useEffect, useState } from 'react'
 import logo from '/img/logo_noir.png'
+import Footer from './Footer'
 
 const navItems = [
   { label: 'Accueil', path: '/' },
-  { label: 'Histoire', path: '/histoire' },
-  { label: 'Approches', path: '/approches' },
+  { label: 'Origines', path: '/origines' },
+  { label: 'Cours', path: '/cours' },
   { label: 'Techniques', path: '/techniques' },
   { label: 'Niveaux', path: '/niveaux' },
   { label: 'Sagesse', path: '/sagesse' },
@@ -181,6 +182,7 @@ export default function Layout() {
       <Container sx={{ py: 4 }}>
         <Outlet />
       </Container>
+      <Footer />
   </Box>
   )
 }

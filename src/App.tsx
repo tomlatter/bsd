@@ -1,12 +1,12 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import Layout from './components/Layout'
 import Accueil from './pages/Accueil'
-import Histoire from './pages/Histoire'
+import Origines from './pages/Origines'
 import Sagesse from './pages/Sagesse'
 import Niveaux from './pages/Niveaux'
 import Techniques from './pages/Techniques'
 import Photos from './pages/Photos'
-import Approches from './pages/Approches'
+import Cours from './pages/Cours'
 
 function App() {
   return (
@@ -14,8 +14,8 @@ function App() {
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Accueil />} />
-          <Route path="histoire" element={<Histoire />} />
-          <Route path="approches" element={<Approches />} />
+          <Route path="origines" element={<Origines />} />
+          <Route path="cours" element={<Cours />} />
           <Route path="niveaux" element={<Niveaux />} />
           <Route path="sagesse" element={<Sagesse />} />
           <Route path="techniques" element={<Techniques />} />

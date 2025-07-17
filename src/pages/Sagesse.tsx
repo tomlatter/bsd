@@ -60,12 +60,6 @@ export default function Sagesse() {
           mdPath="/src/content/sagesse/cortex.md"
         />
         <ExpandableSection
-          id="philosophie"
-          title="Philosophie"
-          subtitle="Plus qu'un sport, le BSD est un art de vivre."
-          mdPath="/src/content/sagesse/philosophie.md"
-        />
-        <ExpandableSection
           id="meditations"
           title="Méditations"
           subtitle="Réflexions et commentaire de Jean Louis Brinker."

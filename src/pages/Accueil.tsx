@@ -10,15 +10,15 @@ import { useNavigate } from 'react-router-dom'
 
 const cards = [
   {
-    title: 'Histoire',
+    title: 'Origines',
     description: 'Découvrez les origines du Bâton de Combat. Self-Défense et de son fondateur.',
-    path: '/histoire',
+    path: '/origines',
     image: '/img/histoire.jpg',
   },
   {
-    title: 'Approches',
-    description: 'Le B.S-D est actuellement enseigné à Toulouse. Découvrez le site web du club!',
-    path: '/approches',
+    title: 'Cours',
+    description: 'Le B.S-D est actuellement enseigné à Toulouse. Toutes les infos pour nous rejoindre.',
+    path: '/cours',
     image: '/img/cours.jpg',
   },
   {

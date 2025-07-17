@@ -136,6 +136,38 @@ export default function ExpandableSection({ title, mdPath, subtitle, id }: Expan
 
       <Collapse in={expanded} timeout="auto" unmountOnExit>
         <Box sx={{ mt: 2 }}>
+          {/* If it's a PDF show a button and embed it */}
+          {mdPath.endsWith(".pdf") ? (
+            <><Link
+              href={mdPath}
+              target="_blank"
+              rel="noopener noreferrer"
+              sx={{
+                display: 'inline-block',
+                fontWeight: 'bold',
+                color: 'primary.main',
+                textDecoration: 'none',
+                p: 2,
+                border: '1px solid',
+                borderColor: 'primary.main',
+                borderRadius: 2,
+              }}
+            >
+              📄 Voir / Télécharger le document
+            </Link>
+            <Box
+              component="iframe"
+              src={mdPath}
+              sx={{
+                width: '100%',
+                height: '600px',
+                border: 'none',
+                borderRadius: 2,
+                mt:2
+              }}
+            />
+            </>
+          ) : (
           <ReactMarkdown
             components={{
               h1: ({ node, ...props }) => (
@@ -182,11 +214,54 @@ export default function ExpandableSection({ title, mdPath, subtitle, id }: Expan
                   {props.children}
                 </Box>
               ),
+              /** ✅ Table Support */
+              table: ({ node, ...props }) => (
+                <Box component="table" sx={{ width: '100%', borderCollapse: 'collapse', my: 3 }} {...props} />
+              ),
+              thead: ({ node, ...props }) => (
+                <Box component="thead" sx={{ backgroundColor: 'grey.100' }} {...props} />
+              ),
+              tbody: ({ node, ...props }) => <Box component="tbody" {...props} />,
+              tr: ({ node, ...props }) => (
+                <Box
+                  component="tr"
+                  sx={{
+                    '&:nth-of-type(even)': { backgroundColor: 'grey.50' },
+                    borderBottom: '1px solid',
+                    borderColor: 'divider',
+                  }}
+                  {...props}
+                />
+              ),
+              th: ({ node, ...props }) => (
+                <Box
+                  component="th"
+                  sx={{
+                    textAlign: 'left',
+                    fontWeight: 'bold',
+                    border: '1px solid',
+                    borderColor: 'divider',
+                    p: 1,
+                  }}
+                  {...props}
+                />
+              ),
+              td: ({ node, ...props }) => (
+                <Box
+                  component="td"
+                  sx={{
+                    border: '1px solid',
+                    borderColor: 'divider',
+                    p: 1,
+                  }}
+                  {...props}
+                />
+              ),
             }}
           >
             {content}
           </ReactMarkdown>
-
+          )}
         </Box>
       </Collapse>
     </Card>

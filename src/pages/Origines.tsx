@@ -22,7 +22,7 @@ export default function Origines() {
           WebkitTextFillColor: 'transparent',
         }}
       >
-        L'histoire du B.S-D
+        Les origines du B.S-D
       </Typography>
 
       <ExpandableSection
@@ -37,6 +37,14 @@ export default function Origines() {
           id="le-griot"
         title="Le Griot Fustigeur"
         mdPath="/src/content/origines/griot.md" subtitle={"Le livre autobiographique du fondateur du B.S-D"}      />
+      <ExpandableSection
+        id="legitime-defense"
+        title="La Légitime Defense"
+        mdPath="/src/content/origines/legitime-defense.md" subtitle={'Ce que dit la loi'}      />
+      <ExpandableSection
+        id="brevets"
+        title="Brevets de Maître d'Armes"
+        mdPath="brevets.pdf" subtitle={"Les brevets au 19ème siècle de Maître d'Armes et de Prévôt d'Armes"}      />
     </Box>
   )
 }
