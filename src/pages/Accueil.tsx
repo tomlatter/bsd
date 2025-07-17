@@ -7,6 +7,8 @@ import {
   Typography,
 } from '@mui/material'
 import { useNavigate } from 'react-router-dom'
+import self_img from "/img/self.png";
+import baton_img from "/img/baton.png";
 
 const cards = [
   {
@@ -210,14 +212,20 @@ export default function Accueil() {
           </Box>
   </Box>
 </Box>
-<Box sx={{ maxWidth: 900, mx: "auto", textAlign: "center", mt: 6, px: 2 }}>
+<Box sx={{ maxWidth: 900, mx: "auto", textAlign: "center", mt: 10, px: 2 }}>
   {/* Heading */}
   <Typography
     variant="h5"
     sx={{
       fontWeight: 700,
       mb: 3,
-      color: "primary.main",
+        background: 'linear-gradient(90deg,rgb(112, 18, 79),rgb(110, 35, 123),rgb(112, 18, 79))',
+        backgroundSize: '200% auto',
+      fontSize: { xs: "1.2rem", md: "1.6rem" },
+        backgroundClip: 'text',
+        WebkitBackgroundClip: 'text',
+        color: 'transparent',
+        WebkitTextFillColor: 'transparent',
     }}
   >
     Une Tradition Ancienne, Une Discipline Moderne
@@ -227,16 +235,16 @@ export default function Accueil() {
   <Typography
     variant="body1"
     sx={{
-      fontSize: { xs: "1rem", md: "1.15rem" },
+      fontSize: { xs: "1rem", md: "1.3rem" },
       lineHeight: 1.8,
       color: "text.secondary",
       mb: 3,
     }}
   >
     <strong>Le combat au bâton long</strong> existe partout dans le monde
-    depuis que l’Homme existe. En France, il fut un compagnon fidèle au
-    Moyen-Âge : aide à la marche, franchissement de rivières, défense contre
-    l’agression. Enseigné dans <strong>l’armée napoléonienne</strong>, il a
+    depuis que l’Homme existe. En France, dans les périodes violentes comme au moyen-âge, c’était un fidèle compagnon. 
+    Il aidait à marcher, descendre à flanc de montagne, gauler des fruits, passer à gué des rivières et surtout se défendre. 
+    Enseigné dans <strong>l’armée napoléonienne</strong>, il a
     traversé les siècles grâce à des maîtres passionnés.
   </Typography>
 
@@ -247,13 +255,13 @@ export default function Accueil() {
   <Typography
     variant="body1"
     sx={{
-      fontSize: { xs: "1rem", md: "1.15rem" },
+      fontSize: { xs: "1rem", md: "1.3rem" },
       lineHeight: 1.8,
       color: "text.secondary",
     }}
   >
     Créé à <strong>Toulouse</strong> par <strong>Jean Louis Brinker</strong> en
-    1980, le <strong>B.S-D</strong> s’inscrit dans cette tradition française.
+    1980, le <strong>B.S-D</strong> s’inscrit dans cette tradition française tout en y intègrant la self-défense à mains nues.
     Cette discipline s’adresse aux femmes, hommes, ados et adultes, en
     proposant des techniques réalistes, efficaces et accessibles.
   </Typography>
@@ -263,78 +271,212 @@ export default function Accueil() {
         display: "flex",
         flexDirection: { xs: "column", sm: "row" }, // Stack on mobile
         gap: 3,
-        mt: 4,
+        mt: 8,
         justifyContent: "center",
       }}
     >
-      {/* Card 1: Bâton de Combat */}
       <Card
-        sx={{
-          flex: 1,
-          maxWidth: 400,
-          boxShadow: 0,
-          borderRadius: 2,
-        }}
-      >
-        <CardContent sx={{ textAlign: "center", p: 3 }}>
-          <Typography
-            variant="h6"
-            sx={{
-              color: "#70124f", // Purple title
-              fontWeight: 700,
-              mb: 2,
-            }}
-          >
-            Bâton de Combat
-          </Typography>
-          <Typography
-            variant="body1"
-            sx={{
-              fontSize: { xs: "0.95rem", md: "1.05rem" },
-              color: "text.secondary",
-              lineHeight: 1.6,
-            }}
-          >
-            Art martial, recherche de la perfection technique en combat au
-            Bâton long et à la Canne de défense.
-          </Typography>
-        </CardContent>
-      </Card>
+  sx={{
+    flex: 1,
+    maxWidth: 400,
+    borderRadius: 3,
+    overflow: "hidden",
+    boxShadow: 3,
+    position: "relative",
+    backgroundColor: "#6b1ca0", // Bottom purple
+    color: "#fff",
+  }}
+>
+  {/* Top Section with Off White and Rounded Bottom */}
+  <Box
+    sx={{
+      backgroundColor: "#eeeee1", 
+      height: "55%",
+      position: "absolute",
+      top: 0,
+      left: 0,
+      right: 0,
+      borderBottomLeftRadius: "50% 30%",
+      borderBottomRightRadius: "50% 30%",
+      zIndex: 1,
+    }}
+  />
 
-      {/* Card 2: Self-Défense */}
+  <CardContent
+    sx={{
+      textAlign: "center",
+      p: 3,
+      position: "relative",
+      zIndex: 2, // To stay above the background layer
+    }}
+  >
+    <Box
+      component="img"
+      src={baton_img}
+      alt="Bâton de Combat"
+      sx={{
+        width: 200,
+        height: "auto",
+        mb: 6,
+        mx: "auto",
+      }}
+    />
+    <Typography
+      variant="h5"
+      sx={{
+        color: "#eeeee1", 
+        fontWeight: 700,
+        mb: 2,
+      }}
+    >
+      Bâton de Combat
+    </Typography>
+    <Typography
+      variant="body1"
+      sx={{
+        fontSize: { xs: "0.95rem", md: "1.05rem" },
+        color: "#eeeee1", 
+        lineHeight: 1.6,
+      }}
+    >
+      Art martial, recherche de la perfection technique en combat au Bâton
+      long et à la Canne de défense.
+    </Typography>
+  </CardContent>
+</Card>
+
+
+  {/* Card 2: Self-Défense */}
       <Card
+  sx={{
+    flex: 1,
+    maxWidth: 400,
+    borderRadius: 3,
+    overflow: "hidden",
+    boxShadow: 3,
+    position: "relative",
+    backgroundColor: "#6b1ca0", // Bottom purple
+    color: "#fff",
+  }}
+>
+      <Box
+    sx={{
+      backgroundColor: "#eeeee1", 
+      height: "55%",
+      position: "absolute",
+      top: 0,
+      left: 0,
+      right: 0,
+      borderBottomLeftRadius: "50% 30%",
+      borderBottomRightRadius: "50% 30%",
+      zIndex: 1,
+    }}
+  />
+
+    <CardContent
+      sx={{
+        textAlign: "center",
+      p: 3,
+      position: "relative",
+      zIndex: 2, // To stay above the background layer
+      }}
+    >
+      <Box
+        component="img"
+        src={self_img}
+        alt="Self-Défense"
         sx={{
-          flex: 1,
-          maxWidth: 400,
-          boxShadow: 0,
-          borderRadius: 2,
+          width: 200,
+          height: "auto",
+          mb: 8.5,
+          px: "20px",
+          mt: "20px",
+          mx: "auto",
+        }}
+      />
+      <Typography
+        variant="h5"
+        sx={{
+          color: "#eeeee1",
+          fontWeight: 700,
+          mb: 2,
         }}
       >
-        <CardContent sx={{ textAlign: "center", p: 3 }}>
-          <Typography
-            variant="h6"
-            sx={{
-              color: "#70124f", // Purple title
-              fontWeight: 700,
-              mb: 2,
-            }}
-          >
-            Self-Défense
-          </Typography>
-          <Typography
-            variant="body1"
-            sx={{
-              fontSize: { xs: "0.95rem", md: "1.05rem" },
-              color: "text.secondary",
-              lineHeight: 1.6,
-            }}
-          >
-            Apprendre à se défendre pour se protéger soi et les autres afin de
-            stopper la violence, ou au moins ne pas la subir.
-          </Typography>
-        </CardContent>
-      </Card>
+        Self-Défense
+      </Typography>
+      <Typography
+        variant="body1"
+        sx={{
+          fontSize: { xs: "0.95rem", md: "1.05rem" },
+        color: "#eeeee1", 
+          lineHeight: 1.6,
+        }}
+      >
+        Apprendre à se défendre pour se protéger soi et les autres afin de
+        stopper la violence, ou au moins ne pas la subir.
+      </Typography>
+    </CardContent>
+  </Card>
     </Box>
+  <Box
+    sx={{
+      display: "flex",
+      flexDirection: "column",
+      // alignItems: "center",
+      // justifyContent: "center",
+      gap: 1,
+      mt: 16,
+      mb: 16,
+      px: 2,
+      maxWidth: 650,
+      mx: "auto",
+      // textAlign: "center",
+    }}
+  >
+    {/* Quote */}
+    <Typography
+      sx={{
+        color: "#70124f",
+        // fontFamily: "'Lora', serif",
+        fontSize: { xs: "1.3rem", md: "2rem" },
+        fontWeight: 400,
+        lineHeight: 1.75,
+        mb: 1,
+        maxWidth: 900,
+      }}
+    >
+      “Eduquer le corps aux techniques martiales, c'est éveiller l'esprit à la
+      non-violence sous toutes ses formes.”
+    </Typography>
+
+    {/* Author */}
+    <Typography
+      sx={{
+        color: "#1a1a1aff",
+        letterSpacing: "3px",
+        textTransform: "uppercase",
+        fontFamily: "'Lato', sans-serif",
+        fontSize: { xs: "1.1rem", md: "1.3rem" },
+        fontWeight: 400,
+        mt: 2,
+      }}
+    >
+      JEAN LOUIS BRINKER
+    </Typography>
+
+    {/* Title */}
+    <Typography
+      sx={{
+        color: "#4a4a4aff",
+        fontFamily: "'Lato', sans-serif",
+        fontSize: { xs: "1rem", md: "1.1rem" },
+        fontWeight: 300,
+        mt: 0.5,
+      }}
+    >
+      Fondateur du B.S-D
+    </Typography>
+  </Box>
 
       <Box
         sx={{

@@ -8,6 +8,7 @@ import Techniques from './pages/Techniques'
 import Photos from './pages/Photos'
 import Cours from './pages/Cours'
 
+
 function App() {
   return (
     <Router>
