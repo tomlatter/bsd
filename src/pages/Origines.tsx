@@ -28,23 +28,28 @@ export default function Origines() {
       <ExpandableSection
           id="presentation"
         title="Présentation du B.S-D"
-        mdPath="/src/content/origines/presentation.md" subtitle={'Une discipline moderne nourrie d’héritages anciens'}      />
+        mdPath="/src/content/origines/presentation.md" subtitle={'Une discipline moderne nourrie d’héritages anciens'}
+          imagePath="/img/sections/presentation.jpg"      />
       <ExpandableSection
           id="origines"
         title="Origines du B.S-D"
-        mdPath="/src/content/origines/presentation.md" subtitle={"D'où vient le B.S-D ?"}      />
+        mdPath="/src/content/origines/origines.md" subtitle={"D'où vient le B.S-D ?"}
+          imagePath="/img/sections/origines.jpg"      />
       <ExpandableSection
           id="le-griot"
         title="Le Griot Fustigeur"
-        mdPath="/src/content/origines/griot.md" subtitle={"Le livre autobiographique du fondateur du B.S-D"}      />
+        mdPath="/src/content/origines/griot.md" subtitle={"Le livre autobiographique du fondateur du B.S-D"} 
+          imagePath="/img/sections/livre.png"     />
       <ExpandableSection
         id="legitime-defense"
         title="La Légitime Defense"
-        mdPath="/src/content/origines/legitime-defense.md" subtitle={'Ce que dit la loi'}      />
+        mdPath="/src/content/origines/legitime-defense.md" subtitle={'Ce que dit la loi'}
+          imagePath="/img/sections/self.png"      />
       <ExpandableSection
         id="brevets"
         title="Brevets de Maître d'Armes"
-        mdPath="brevets.pdf" subtitle={"Les brevets au 19ème siècle de Maître d'Armes et de Prévôt d'Armes"}      />
+        mdPath="brevets.pdf" subtitle={"Les brevets au 19ème siècle de Maître d'Armes et de Prévôt d'Armes"}
+          imagePath="/img/sections/brevet.png"      />
     </Box>
   )
 }

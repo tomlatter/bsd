@@ -29,19 +29,23 @@ export default function Techniques() {
       <ExpandableSection
           id="distances"
         title="Distances et Techniques"
-        mdPath="/src/content/techniques/distances.md" subtitle={'Distances et Techniques de combat en B.S-D.'}      />
+        mdPath="/src/content/techniques/distances.md" subtitle={'Distances et Techniques de combat en B.S-D.'}
+          imagePath="/img/sections/distances.png"      />
       <ExpandableSection
           id="schema"
-        title="Schéma des techniques"
-        mdPath="/src/content/techniques/frappes-baton.md" subtitle={'Les techniques de frappes au bâton.'}      />
+        title="Schéma des Techniques"
+        mdPath="/src/content/techniques/frappes-baton.md" subtitle={'Les techniques de frappes au bâton.'}
+          imagePath="/img/sections/schema.png"      />
       <ExpandableSection
           id="enchainements"
         title="Mémo Enchainements"
-        mdPath="/src/content/techniques/enchainements.md" subtitle={'Les enchaînements techniques et codifés au bâton.'}      />
+        mdPath="/src/content/techniques/enchainements.md" subtitle={'Les enchaînements techniques et codifés au bâton.'}
+          imagePath="/img/sections/enchainements.png"      />
       <ExpandableSection
           id="enerigies"
         title="Energies"
-        mdPath="/src/content/techniques/energies.md" subtitle={'Energie interne - Energie externe'}      />
+        mdPath="/src/content/techniques/energies.md" subtitle={'Energie interne - Energie externe'}
+          imagePath="/img/sections/energies.png"      />
     </Box>
   )
 }

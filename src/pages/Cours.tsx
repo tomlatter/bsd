@@ -1,10 +1,10 @@
-import { Box, Typography } from '@mui/material'
+import { Box, Typography, Button, Card, CardActionArea, CardContent } from '@mui/material'
 import ExpandableSection from '../components/ExpandableSection'
 
 export default function Cours() {
   return (
     <Box sx={{ px: {xs: 0.3, md: 2}, py: 4 }}>
-             <Typography
+       <Typography
         variant="h5"
         sx={{
           fontWeight: 700,
@@ -22,13 +22,61 @@ export default function Cours() {
           WebkitTextFillColor: 'transparent',
         }}
       >
-        Les approches techniques et pédagogiques du B.S-D 
+        Cours
       </Typography>
+
+<Card sx={{ borderRadius: 3, overflow: 'hidden', height: '100%', mb:3 }}>
+  
+    <CardActionArea sx={{ display: 'flex', flexDirection: 'row', height: '100%' }}
+            onClick={() => window.open("https://baton-self.club", '_blank')}>
+       <CardContent
+          sx={{
+          width: "100%",
+          backgroundColor: "#eeeee1",
+          padding: 3,
+          pl: 5,
+          pr: 5,
+          flexGrow: 1,
+          display: "flex",
+          flexDirection: { xs: "column", md: "row" }, // column on mobile, row on large
+          alignItems: "center", // vertically center content when row
+          justifyContent: "flex-start",
+          gap: 3, // space between button and text
+        }}
+     >
+      <Typography
+        variant="body1"
+        sx={{
+          color: "text.secondary",
+          fontSize: { xs: "1rem", md: "1.5rem" },
+          maxWidth: 500,
+          mx: { xs: "auto", md: 0 },
+        }}
+      >
+        Le B.S-D est actuellement enseigné à Toulouse les lundis et jeudis soirs.{" "}<br />
+        
+      </Typography>
+        <Button
+            variant="contained"
+            color="primary"
+            sx={{ mt: 0 }}
+            size="large"
+            href="https://www.baton-self.club"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Visitez le site du club
+          </Button>
+      </CardContent>
+    </CardActionArea>
+</Card>
+
 
       <ExpandableSection
         id="initiation"
         title="Initiation"
-        mdPath="/src/content/cours/initiation.md" subtitle={'Franchir la porte : premier pas vers la confiance et la maîtrise'}      />
+        mdPath="/src/content/cours/initiation.md" subtitle={'Franchir la porte : premier pas vers la confiance et la maîtrise'}
+          imagePath="/img/sections/initiation.png"      />
 
 
       <ExpandableSection
@@ -36,6 +84,7 @@ export default function Cours() {
         title="Philosophie"
         subtitle="Plus qu'un sport, le BSD est un art de vivre."
         mdPath="/src/content/cours/philosophie.md"
+          imagePath="/img/sections/philosophie.png"
       />
 
       <ExpandableSection
@@ -43,6 +92,7 @@ export default function Cours() {
         title="Cotisations"
         subtitle="Infos sur les paiements"
         mdPath="/src/content/cours/cotisations.md"
+          imagePath="/img/sections/cotisations.png"
       />
 
       <ExpandableSection
@@ -50,6 +100,7 @@ export default function Cours() {
         title="Calendrier"
         subtitle="Horaires et dates d'entrainements"
         mdPath="/src/content/cours/calendrier.md"
+          imagePath="/img/sections/calendrier.png"
       />
 
       <ExpandableSection
@@ -57,12 +108,14 @@ export default function Cours() {
           title="Etre bien"
           subtitle="L'essentiel est d'être bien dans sa peau."
           mdPath="/src/content/cours/bien.md"
+          imagePath="/img/sections/bien.jpg"
         />
 
       <ExpandableSection
         id="bsd-au-feminin"
         title="Le B.S-D au féminin"
-        mdPath="/src/content/cours/bsd-au-feminin.md" subtitle={' Quand la technique surpasse la force : le B.S-D comme levier d’égalité '}      />
+        mdPath="/src/content/cours/bsd-au-feminin.md" subtitle={' Quand la technique surpasse la force : le B.S-D comme levier d’égalité '}
+          imagePath="/img/sections/self.png"      />
 
     </Box>
   )

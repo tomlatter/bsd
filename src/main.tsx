@@ -5,6 +5,8 @@ import { ThemeProvider, CssBaseline } from '@mui/material'
 import theme from './theme'
 import '@fontsource/montserrat/400.css'
 import '@fontsource/montserrat/700.css'
+import '@fontsource/lato/400.css';
+import '@fontsource/lato/700.css';
 import './index.css'
 
 ReactDOM.createRoot(document.getElementById('root')!).render(

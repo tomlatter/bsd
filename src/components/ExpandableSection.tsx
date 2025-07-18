@@ -27,9 +27,10 @@ interface ExpandableSectionProps {
   title: string
   mdPath: string
   subtitle: string
+  imagePath: string // ✅ New prop
 }
 
-export default function ExpandableSection({ title, mdPath, subtitle, id }: ExpandableSectionProps) {
+export default function ExpandableSection({ title, mdPath, subtitle, id, imagePath }: ExpandableSectionProps) {
   const [expanded, setExpanded] = useState(false)
   const [content, setContent] = useState('')
   const [loading, setLoading] = useState(true)
@@ -77,21 +78,19 @@ export default function ExpandableSection({ title, mdPath, subtitle, id }: Expan
     }
   }, [expanded, loading, id])
 
-
   return (
     <Card
       ref={cardRef}
       id={id}
       sx={{
         mb: 2,
-        border: !expanded ? '1px solid #ccc' : '3px solid #70124f',
-        maxHeight: !expanded ? '120px' : undefined,
+        border: !expanded ? '0px solid #ccc' : '3px solid #70124f',
         cursor: 'pointer',
+        backgroundColor: !expanded ? '#eeeee1' : '#ffffff',
         position: 'relative',
-        px: { xs: 3, md: 4 },
-        pt: 5,
-        pb: 2,
-        '&:hover': { backgroundColor: !expanded ? 'rgba(0,0,0,0.02)' : '#fff' },
+        display: 'flex',
+        flexDirection: 'column',
+        '&:hover': { backgroundColor: !expanded ? '#e4e4d4ff' : '#fff' },
       }}
       onClick={() => {
         const next = !expanded
@@ -101,6 +100,45 @@ export default function ExpandableSection({ title, mdPath, subtitle, id }: Expan
         }
       }}
     >
+      {/* ✅ Collapsed Layout */}
+      {!expanded && (
+        <Box
+          sx={{
+            display: 'flex',
+            alignItems: 'stretch',
+            width: '100%',
+            height: 120, // collapsed card height
+          }}
+        >
+          {/* ✅ Image on the left, square */}
+          <Box
+            component="img"
+            src={imagePath}
+            alt={title}
+            sx={{
+              width: 120,
+              height: 120,
+              objectFit: 'cover',
+              backgroundColor: "#fedad6"
+            }}
+          />
+          {/* ✅ Title & Subtitle */}
+          <Box sx={{ flex: 1, px: {xs: 2, md: 4}, display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
+            <Typography variant="h6" fontWeight="bold" sx={{ fontSize: { xs: '1rem', md: '1.5rem' } }}>
+              {title}
+            </Typography>
+            <Typography variant="body2" color="text.secondary" 
+            sx={{
+                mt: 0.5,
+                fontSize: { xs: "0.9rem", md: "1.3rem" },
+             }}>
+              {subtitle}
+            </Typography>
+          </Box>
+        </Box>
+      )}
+
+      {/* ✅ Expand Button */}
       <ExpandMore
         expand={expanded}
         onClick={handleToggle}
@@ -117,55 +155,53 @@ export default function ExpandableSection({ title, mdPath, subtitle, id }: Expan
         <ExpandMoreIcon sx={{ fontSize: 32 }} />
       </ExpandMore>
 
-      <Typography
-        variant="h6"
-        fontWeight="bold"
-        gutterBottom
-        sx={{ mt: -3, fontSize: { xs: '1.1rem', md: '1.5rem' } }}
-      >
-        {title}
-      </Typography>
-
-      {loading ? (
-        <CircularProgress />
-      ) : (
-        <Box sx={{ mb: 1 }}>
-          <ReactMarkdown>{subtitle}</ReactMarkdown>
-        </Box>
-      )}
-
+      {/* ✅ Expanded Content */}
       <Collapse in={expanded} timeout="auto" unmountOnExit>
-        <Box sx={{ mt: 2 }}>
-          {/* If it's a PDF show a button and embed it */}
-          {mdPath.endsWith(".pdf") ? (
-            <><Link
-              href={mdPath}
-              target="_blank"
-              rel="noopener noreferrer"
-              sx={{
-                display: 'inline-block',
-                fontWeight: 'bold',
-                color: 'primary.main',
-                textDecoration: 'none',
-                p: 2,
-                border: '1px solid',
-                borderColor: 'primary.main',
-                borderRadius: 2,
-              }}
+        <Box sx={{ p: 3 }}>
+           <Typography
+              variant="h6"
+              fontWeight="bold"
+              gutterBottom
+              sx={{ mt: 0, fontSize: { xs: '1.1rem', md: '1.5rem' } }}
             >
-              📄 Voir / Télécharger le document
-            </Link>
-            <Box
-              component="iframe"
-              src={mdPath}
-              sx={{
-                width: '100%',
-                height: '600px',
-                border: 'none',
-                borderRadius: 2,
-                mt:2
-              }}
-            />
+              {title}
+            </Typography>
+
+              <Box sx={{ mb: 1 }}>
+                <ReactMarkdown>{subtitle}</ReactMarkdown>
+              </Box>
+          {loading ? (
+            <CircularProgress />
+          ) : mdPath.endsWith('.pdf') ? (
+            <>
+              <Link
+                href={mdPath}
+                target="_blank"
+                rel="noopener noreferrer"
+                sx={{
+                  display: 'inline-block',
+                  fontWeight: 'bold',
+                  color: 'primary.main',
+                  textDecoration: 'none',
+                  p: 2,
+                  border: '1px solid',
+                  borderColor: 'primary.main',
+                  borderRadius: 2,
+                }}
+              >
+                📄 Voir / Télécharger le document
+              </Link>
+              <Box
+                component="iframe"
+                src={mdPath}
+                sx={{
+                  width: '100%',
+                  height: '600px',
+                  border: 'none',
+                  borderRadius: 2,
+                  mt: 2,
+                }}
+              />
             </>
           ) : (
           <ReactMarkdown
