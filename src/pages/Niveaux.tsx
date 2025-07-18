@@ -61,14 +61,14 @@ export default function Niveaux() {
           title="Niveaux 4 à 6"
           subtitle="Trois niveaux Pédagogiques"
           mdPath="/src/content/niveaux/4-5-6.md"
-          imagePath="/img/sections/ceinture_noire.png"
+          imagePath="/img/sections/prof.png"
         />
         <ExpandableSection
           id="recherche"
           title="Niveaux 7 à 8"
           subtitle="Deux niveaux de Recherche"
           mdPath="/src/content/niveaux/7-8.md"
-          imagePath="/img/sections/ceinture_noire.png"
+          imagePath="/img/sections/recherche.png"
         />
         <ExpandableSection
           id="gardien-du-bsd"
