@@ -139,7 +139,7 @@ export default function ExpandableSection({ title, mdPath, subtitle, id, imagePa
       )}
 
       {/* ✅ Expand Button */}
-      <ExpandMore
+      {/* <ExpandMore
         expand={expanded}
         onClick={handleToggle}
         aria-expanded={expanded}
@@ -153,7 +153,7 @@ export default function ExpandableSection({ title, mdPath, subtitle, id, imagePa
         }}
       >
         <ExpandMoreIcon sx={{ fontSize: 32 }} />
-      </ExpandMore>
+      </ExpandMore> */}
 
       {/* ✅ Expanded Content */}
       <Collapse in={expanded} timeout="auto" unmountOnExit>
