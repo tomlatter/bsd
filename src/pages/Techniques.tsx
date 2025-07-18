@@ -28,17 +28,17 @@ export default function Techniques() {
 
       <ExpandableSection
           id="distances"
-        title="Distances et Techniques"
+        title="Distances"
         mdPath="/src/content/techniques/distances.md" subtitle={'Distances et Techniques de combat en B.S-D.'}
           imagePath="/img/sections/distances.png"      />
       <ExpandableSection
           id="schema"
-        title="Schéma des Techniques"
-        mdPath="/src/content/techniques/frappes-baton.md" subtitle={'Les techniques de frappes au bâton.'}
+        title="Schéma"
+        mdPath="/src/content/techniques/frappes-baton.md" subtitle={'Schéma des techniques de frappes au bâton.'}
           imagePath="/img/sections/schema.png"      />
       <ExpandableSection
           id="enchainements"
-        title="Mémo Enchainements"
+        title="Enchainements"
         mdPath="/src/content/techniques/enchainements.md" subtitle={'Les enchaînements techniques et codifés au bâton.'}
           imagePath="/img/sections/enchainements.png"      />
       <ExpandableSection

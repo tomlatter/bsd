@@ -27,7 +27,7 @@ export default function Origines() {
 
       <ExpandableSection
           id="presentation"
-        title="Présentation du B.S-D"
+        title="Présentation"
         mdPath="/src/content/origines/presentation.md" subtitle={'Une discipline moderne nourrie d’héritages anciens'}
           imagePath="/img/sections/presentation.jpg"      />
       <ExpandableSection
@@ -47,7 +47,7 @@ export default function Origines() {
           imagePath="/img/sections/self.png"      />
       <ExpandableSection
         id="brevets"
-        title="Brevets de Maître d'Armes"
+        title="Brevets"
         mdPath="brevets.pdf" subtitle={"Les brevets au 19ème siècle de Maître d'Armes et de Prévôt d'Armes"}
           imagePath="/img/sections/brevet.png"      />
     </Box>

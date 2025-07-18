@@ -72,15 +72,15 @@ export default function Niveaux() {
         />
         <ExpandableSection
           id="gardien-du-bsd"
-          title="Niveau 9 : Gardien du B.S-D"
-          subtitle="Un niveau Technique, Pédagogique, Philosophique et de Recherche"
+          title="Niveau 9"
+          subtitle="Gardien du B.S-D : Un niveau Technique, Pédagogique, Philosophique et de Recherche"
           mdPath="/src/content/niveaux/9.md"
           imagePath="/img/sections/corde_tricolore.png"
         />
         <ExpandableSection
           id="esprit-du-bsd"
-          title="Niveau 10 : Gardien de la Voie"
-          subtitle="Un niveau Spirituel (Conseil des Sages)"
+          title="Niveau 10"
+          subtitle="Gardien de la Voie : Un niveau Spirituel (Conseil des Sages)"
           mdPath="/src/content/niveaux/10.md"
           imagePath="/img/sections/corde_blanche.png"
         />
