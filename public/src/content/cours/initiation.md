@@ -132,7 +132,7 @@ Cela change tout dans :
 3. **Le combat**  
    > Avec de l’expérience, le cortex peut réagir. On a une petite chance de s’en sortir.
 
-👉 Voir le lien : [Le cortex](https://www.baton-self.com/fr/sagesse-du-bsd/le-cortex)
+👉 Voir le lien : [Le cortex](/sagesse#cortex)
 
 ---
 

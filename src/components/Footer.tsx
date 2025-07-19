@@ -99,13 +99,13 @@ const Footer = () => {
               <MuiLink href="https://www.baton-self.club" target="_blank" underline="hover" sx={{ color: "grey.300", "&:hover": { color: "primary.light" } }}>
                 B.S-D à Toulouse
               </MuiLink>
-              <MuiLink href="/cours#cotisations" target="_blank" underline="hover" sx={{ color: "grey.300", "&:hover": { color: "primary.light" } }}>
+              <MuiLink href="/cours#cotisations"  underline="hover" sx={{ color: "grey.300", "&:hover": { color: "primary.light" } }}>
                 Cotisations
               </MuiLink>
-              <MuiLink href="/cours#bsd-au-feminin" target="_blank" underline="hover" sx={{ color: "grey.300", "&:hover": { color: "primary.light" } }}>
+              <MuiLink href="/cours#bsd-au-feminin" underline="hover" sx={{ color: "grey.300", "&:hover": { color: "primary.light" } }}>
                 B.S-D au Féminin
               </MuiLink>
-              <MuiLink href="/origines#le-griot" target="_blank" underline="hover" sx={{ color: "grey.300", "&:hover": { color: "primary.light" } }}>
+              <MuiLink href="/origines#le-griot" underline="hover" sx={{ color: "grey.300", "&:hover": { color: "primary.light" } }}>
                 Le Griot Fustigeur
               </MuiLink>
             </Box>

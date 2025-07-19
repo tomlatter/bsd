@@ -508,7 +508,7 @@ export default function Accueil() {
             }}
             onClick={() => handleClick(card)}
           >
-            <Card sx={{ borderRadius: 3, overflow: 'hidden', height: '100%' }}>
+            <Card sx={{ borderRadius: 3, overflow: 'hidden', height: '100%', position: 'relative' }}>
               <CardActionArea sx={{ display: 'flex', flexDirection: 'column', height: '100%' }}>
                 {/* Image section */}
                 <Box
@@ -517,10 +517,33 @@ export default function Accueil() {
                     height: 250,
                     backgroundImage: `url(${card.image})`,
                     backgroundSize: 'cover',
-                    backgroundPosition: 'center',
+                    backgroundPosition: 'center', 
+                    position: 'relative'
                   }}
-                />
-
+                >
+                  {/* Floating Title */}
+                  <Typography
+                    variant="h6"
+                    sx={{
+                      position: 'absolute',
+                      top: 16,
+                      left: '50%',
+                      transform: 'translateX(-50%)',
+                      background: 'rgba(128, 0, 255, 0.85)', // purple with transparency
+                      color: '#fff',
+                      padding: '6px 16px',
+                      borderRadius: '24px',
+                      fontWeight: 700,
+                      fontFamily: '"Poppins", "Montserrat", sans-serif',
+                      fontSize: { xs: '1rem', md: '1.25rem' },
+                      textTransform: 'uppercase',
+                      letterSpacing: '1px',
+                      boxShadow: '0 4px 8px rgba(0,0,0,0.2)',
+                    }}
+                  >
+                    {card.title}
+                  </Typography>
+                </Box>
                 {/* Text section */}
                 <CardContent
                   sx={{
@@ -530,12 +553,13 @@ export default function Accueil() {
                     flexGrow: 1,
                   }}
                 >
-                  <Typography variant="h6" fontWeight="bold" color="text.primary">
+                  <Typography  variant="h6" sx={{ fontWeight: 600, letterSpacing: '0.5px' }}>
                     {card.title}
                   </Typography>
-                  <Typography variant="body2" color="text.secondary"
+                  <Typography variant="body2"
                     sx={{
-                      fontSize: { xs: "0.95rem", md: "1.05rem" }
+                      fontSize: { xs: "0.95rem", md: "1.05rem" },
+                      color: 'text.secondary', mt: 1, lineHeight: 1.5
                     }}>
                     {card.description}
                   </Typography>

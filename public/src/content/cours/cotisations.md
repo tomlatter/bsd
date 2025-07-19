@@ -112,7 +112,7 @@ Un lien **Framadate** est envoyé par mail chaque semaine pour s'inscrire aux co
 ---
 
 ## 🎁 **Cours d'essai**
-Gratuit → [Lien d'inscription](http://www.baton-self.com/fr/initiation-bsd/cours-d-essais)
+Gratuit
 
 ---
 
