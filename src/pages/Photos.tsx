@@ -11,7 +11,7 @@ const Gallery = lazy(() =>
 );
 
 const TOTAL_IMAGES = 260;
-const BATCH_SIZE = 20;
+const BATCH_SIZE = 10;
 
   function shuffleArray<T>(array: T[]): T[] {
     const arr = [...array];
