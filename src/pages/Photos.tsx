@@ -13,8 +13,17 @@ const Gallery = lazy(() =>
 const TOTAL_IMAGES = 260;
 const BATCH_SIZE = 20;
 
+  function shuffleArray<T>(array: T[]): T[] {
+    const arr = [...array];
+    for (let i = arr.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [arr[i], arr[j]] = [arr[j], arr[i]];
+    }
+    return arr;
+  }
+
 const imageFilenames = Array.from({ length: TOTAL_IMAGES }, (_, i) => `${i + 1}.jpg`);
-const imageUrls = imageFilenames.map((name) => `/photos/${name}`);
+const imageUrls = shuffleArray(imageFilenames.map((name) => `/photos/${name}`));
 
 type GalleryImage = {
   src: string;
@@ -33,6 +42,7 @@ export default function MyGallery() {
   const [index, setIndex] = useState<number>(-1);
   const [loadedCount, setLoadedCount] = useState(0);
   const loaderRef = useRef<HTMLDivElement | null>(null);
+
 
   const loadImageDimensions = useCallback((src: string): Promise<GalleryImage | null> => {
     return new Promise((resolve) => {
@@ -55,21 +65,32 @@ export default function MyGallery() {
   }, []);
 
   const loadNextBatch = useCallback(async () => {
-    if (loading) return;
+    // If already loading or all images are loaded, do nothing
+    if (loading || loadedCount >= imageUrls.length) return;
+
+    // Set loading immediately to block concurrent calls
     setLoading(true);
 
-    const nextBatch = imageUrls.slice(loadedCount, loadedCount + BATCH_SIZE);
+    const start = loadedCount;
+    const end = Math.min(start + BATCH_SIZE, imageUrls.length);
+    const nextBatch = imageUrls.slice(start, end);
+
+    if (nextBatch.length === 0) {
+      setLoading(false);
+      return;
+    }
+
+    // Load image dimensions
     const loaded = await Promise.all(nextBatch.map(loadImageDimensions));
     const validPhotos = loaded.filter((p): p is GalleryImage => p !== null);
 
+    // Use functional updates to avoid stale state
     setPhotos((prev) => [...prev, ...validPhotos]);
-    setLoadedCount((prev) => prev + BATCH_SIZE);
-    setLoading(false);
-  }, [loadedCount, loading, loadImageDimensions]);
+    setLoadedCount((prev) => prev + validPhotos.length);
 
-  useEffect(() => {
-    loadNextBatch();
-  }, []);
+    setLoading(false);
+  }, [loading, loadedCount, loadImageDimensions]);
+
 
   useEffect(() => {
     const observer = new IntersectionObserver(
