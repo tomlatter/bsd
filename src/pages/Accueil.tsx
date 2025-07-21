@@ -9,6 +9,7 @@ import {
 import { useNavigate } from 'react-router-dom'
 import self_img from "/img/self.png";
 import baton_img from "/img/baton.png";
+import { Helmet } from 'react-helmet-async';
 
 const cards = [
   {
@@ -59,47 +60,53 @@ export default function Accueil() {
   }
 
   return (
+    <>     
+     <Helmet>
+        <title>BSD Officiel | Acceuil</title>
+        <meta name="description" content="Une discipline martiale combinant 
+          Bâton de Combat et Self-Défense. Enseigné à Toulouse." />
+      </Helmet>
     <Box sx={{ px: 2, maxWidth: 1400, mx: 'auto', mt: {
        xs: 1,
        md: 1
     }}}>
-<Box
-  sx={{
-    display: 'flex',
-    flexDirection: { xs: 'column', md: 'row' },
-    alignItems: 'center',
-    justifyContent: 'center',
-    gap: 4,
-    maxWidth: 1200,
-    mx: 'auto',
-    px: { xs: 0, md: 2 },
-    py: { xs: 0, md: 4 },
-  }}
->
-  {/* Left Side: Text */}
-  <Box sx={{ flex: 1 }}>
-    <Typography
-      variant="h5"
+    <Box
       sx={{
-        fontWeight: 700,
-        fontSize: {
-          xs: '1.6rem',
-          md: '2.3rem',
-        },
-        mb: 1,
-        textAlign: 'left',
-        background: 'linear-gradient(90deg,rgb(112, 18, 79),rgb(110, 35, 123),rgb(112, 18, 79))',
-        backgroundSize: '200% auto',
-        backgroundClip: 'text',
-        WebkitBackgroundClip: 'text',
-        color: 'transparent',
-        WebkitTextFillColor: 'transparent',
+        display: 'flex',
+        flexDirection: { xs: 'column', md: 'row' },
+        alignItems: 'center',
+        justifyContent: 'center',
+        gap: 4,
+        maxWidth: 1200,
+        mx: 'auto',
+        px: { xs: 0, md: 2 },
+        py: { xs: 0, md: 4 },
       }}
     >
-      Site officiel du B.S-D
-    </Typography>
+      {/* Left Side: Text */}
+      <Box sx={{ flex: 1 }}>
+        <Typography
+          variant="h5"
+          sx={{
+            fontWeight: 700,
+            fontSize: {
+              xs: '1.6rem',
+              md: '2.3rem',
+            },
+            mb: 1,
+            textAlign: 'left',
+            background: 'linear-gradient(90deg,rgb(112, 18, 79),rgb(110, 35, 123),rgb(112, 18, 79))',
+            backgroundSize: '200% auto',
+            backgroundClip: 'text',
+            WebkitBackgroundClip: 'text',
+            color: 'transparent',
+            WebkitTextFillColor: 'transparent',
+          }}
+        >
+          Site officiel du B.S-D
+        </Typography>
 
- <Typography
+    <Typography
       variant="h5"
       sx={{
         color: 'text.primary',
@@ -547,5 +554,6 @@ export default function Accueil() {
 
       </Box>
     </Box>
+    </>
   )
 }

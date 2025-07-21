@@ -1,8 +1,15 @@
 import { Box, Typography } from '@mui/material'
 import ExpandableSection from '../components/ExpandableSection'
+import { Helmet } from 'react-helmet-async';
 
 export default function Sagesse() {
   return (
+        <>     
+     <Helmet>
+        <title>BSD Officiel | Sagesse</title>
+        <meta name="description" content="Une discipline martiale combinant 
+          Bâton de Combat et Self-Défense. Enseigné à Toulouse. Les principes qui guident la pratique." />
+      </Helmet>
     <Box sx={{ px: {xs: 0.3, md: 2}, py: 4 }}>
              <Typography
         variant="h5"
@@ -141,5 +148,6 @@ export default function Sagesse() {
         />
       </Box>
     </Box>
+    </>
   )
 }

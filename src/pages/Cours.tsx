@@ -1,8 +1,15 @@
 import { Box, Typography, Button, Card, CardActionArea, CardContent } from '@mui/material'
 import ExpandableSection from '../components/ExpandableSection'
+import { Helmet } from 'react-helmet-async';
 
 export default function Cours() {
   return (
+     <>     
+     <Helmet>
+        <title>BSD Officiel | Cours</title>
+        <meta name="description" content="Cours de  
+          Bâton de Combat et Self-Défense. Le B.S-D est actuellement enseigné à Toulouse avec cours d'essai gratuits." />
+      </Helmet>
     <Box sx={{ px: {xs: 0.3, md: 2}, py: 4 }}>
        <Typography
         variant="h5"
@@ -118,5 +125,6 @@ export default function Cours() {
           imagePath="/img/sections/self.png"      />
 
     </Box>
+    </>
   )
 }

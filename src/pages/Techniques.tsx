@@ -1,8 +1,15 @@
 import { Box, Typography } from '@mui/material'
 import ExpandableSection from '../components/ExpandableSection'
+import { Helmet } from 'react-helmet-async';
 
 export default function Techniques() {
   return (
+        <>     
+     <Helmet>
+        <title>BSD Officiel | Techniques</title>
+        <meta name="description" content="Une discipline martiale combinant 
+          Bâton de Combat et Self-Défense. Approche moderne des techniques de défense à mains nues et au bâton." />
+      </Helmet>
     <Box sx={{ px: {xs: 0.3, md: 2}, py: 4 }}>
        <Typography
         variant="h5"
@@ -22,7 +29,7 @@ export default function Techniques() {
           WebkitTextFillColor: 'transparent',
         }}
       >
-       Distances, Techniques et Enchaînements
+       Techniques
       </Typography>
 
 
@@ -47,5 +54,6 @@ export default function Techniques() {
         mdPath="/src/content/techniques/energies.md" subtitle={'Energie interne - Energie externe'}
           imagePath="/img/sections/energies.png"      />
     </Box>
+    </>
   )
 }

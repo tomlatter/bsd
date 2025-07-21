@@ -1,8 +1,15 @@
 import { Box, Button, Card, CardActionArea, CardContent, Typography } from '@mui/material'
 import ExpandableSection from '../components/ExpandableSection'
+import { Helmet } from 'react-helmet-async';
 
 export default function Niveaux() {
   return (
+        <>     
+     <Helmet>
+        <title>BSD Officiel | Niveaux</title>
+        <meta name="description" content="Une discipline martiale combinant 
+          Bâton de Combat et Self-Défense. Enseigné à Toulouse. Les ceintures, titres et protocoles." />
+      </Helmet>
     <Box sx={{ px: {xs: 0.3, md: 2}, py: 4 }}>
              <Typography
         variant="h5"
@@ -140,5 +147,6 @@ export default function Niveaux() {
         />
       </Box>
     </Box>
+    </>
   )
 }

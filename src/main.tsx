@@ -1,6 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './App.tsx'
+import { HelmetProvider } from 'react-helmet-async';
 import { ThemeProvider, CssBaseline } from '@mui/material'
 import theme from './theme'
 import '@fontsource/montserrat/400.css'
@@ -13,7 +14,9 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
     <ThemeProvider theme={theme}>
       <CssBaseline />
-      <App />
+      <HelmetProvider>
+        <App />
+      </HelmetProvider>
     </ThemeProvider>
   </React.StrictMode>
 )

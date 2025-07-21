@@ -2,6 +2,7 @@ import { useEffect, useState, useRef, useCallback, lazy, Suspense } from "react"
 import Lightbox from "yet-another-react-lightbox";
 import "yet-another-react-lightbox/styles.css";
 import type { ComponentType } from "react";
+import { Helmet } from 'react-helmet-async';
 
 const Gallery = lazy(() =>
   import("react-grid-gallery").then((mod) => ({
@@ -84,7 +85,12 @@ export default function MyGallery() {
   }, [loadNextBatch, loadedCount]);
 
   return (
-    <>
+    <>   
+     <Helmet>
+        <title>BSD Officiel | Photos</title>
+        <meta name="description" content="Une discipline martiale combinant 
+          Bâton de Combat et Self-Défense. Enseigné à Toulouse. Plus de 40 ans de souvenirs." />
+      </Helmet>
       <Suspense fallback={<div>Chargement de la galerie…</div>}>
         <Gallery
           images={photos}

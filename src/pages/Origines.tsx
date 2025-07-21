@@ -1,8 +1,15 @@
 import { Box, Typography } from '@mui/material'
 import ExpandableSection from '../components/ExpandableSection'
+import { Helmet } from 'react-helmet-async';
 
 export default function Origines() {
   return (
+        <>     
+     <Helmet>
+        <title>BSD Officiel | Origines</title>
+        <meta name="description" content="<Les origines du BSD - 
+          Bâton de Combat et Self-Défense. Enseigné à Toulouse." />
+      </Helmet>
     <Box sx={{ px: {xs: 0.3, md: 2}, py: 4 }}>
       <Typography
         variant="h5"
@@ -22,7 +29,7 @@ export default function Origines() {
           WebkitTextFillColor: 'transparent',
         }}
       >
-        Les origines du B.S-D
+        Origines de la discipline
       </Typography>
 
       <ExpandableSection
@@ -51,5 +58,6 @@ export default function Origines() {
         mdPath="brevets.pdf" subtitle={"Les brevets au 19ème siècle de Maître d'Armes et de Prévôt d'Armes"}
           imagePath="/img/sections/brevet.png"      />
     </Box>
+    </>
   )
 }
