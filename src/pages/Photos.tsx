@@ -91,6 +91,9 @@ export default function MyGallery() {
     setLoading(false);
   }, [loading, loadedCount, loadImageDimensions]);
 
+  useEffect(() => {
+    loadNextBatch(); // Load first 20 images immediately
+  }, [loadNextBatch]);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
