@@ -60,7 +60,7 @@ De **septembre 2025** à **juin 2026**
 
 ### **Vacances et jours fériés**
 - Généralement **pas d’interruption** pendant vacances scolaires (sauf Noël/Jour de l’An et juillet-août)  
-- **Pas de cours les jours fériés** (interdiction d’accès au gymnase par la mairie)
+- Jours fériés : Cours **selon disponibilité des Enseignant(e)s**  et le nombre de participants
 
 ---
 
