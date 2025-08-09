@@ -1,6 +1,7 @@
 import { Box, Button, Card, CardActionArea, CardContent, Typography } from '@mui/material'
 import ExpandableSection from '../components/ExpandableSection'
 import { Helmet } from 'react-helmet-async';
+import UvPromoCard from  '../components/UvPromoCard'
 
 export default function Niveaux() {
   return (
@@ -10,8 +11,9 @@ export default function Niveaux() {
         <meta name="description" content="Une discipline martiale combinant 
           Bâton de Combat et Self-Défense. Enseigné à Toulouse. Les ceintures, titres et protocoles." />
       </Helmet>
+      
     <Box sx={{ px: {xs: 0.3, md: 2}, py: 4 }}>
-             <Typography
+       <Typography
         variant="h5"
         sx={{
           fontWeight: 700,
@@ -32,51 +34,7 @@ export default function Niveaux() {
         Titres, niveaux et protocoles
       </Typography>
 
-      <Card sx={{ borderRadius: 3, overflow: 'hidden', height: '100%', mb:3 }}>
-        
-          <CardActionArea sx={{ display: 'flex', flexDirection: 'row', height: '100%' }}
-                  onClick={() => window.open("https://uv.baton-self.fr", '_blank')}>
-             <CardContent
-                sx={{
-                width: "100%",
-                backgroundColor: "#eeeee1",
-                padding: 3,
-                pl: 5,
-                pr: 5,
-                flexGrow: 1,
-                display: "flex",
-                flexDirection: { xs: "column", md: "row" }, // column on mobile, row on large
-                alignItems: "center", // vertically center content when row
-                justifyContent: "flex-start",
-                gap: 3, // space between button and text
-              }}
-           >
-            <Typography
-              variant="body1"
-              sx={{
-                color: "text.secondary",
-                fontSize: { xs: "1rem", md: "1.5rem" },
-                maxWidth: 500,
-                mx: { xs: "auto", md: 0 },
-              }}
-            >
-              Découvrez l’espace dédié aux Unités de Valeurs pour suivre votre progression de façon simple et ludique.{" "}<br />
-              
-            </Typography>
-              <Button
-                  variant="contained"
-                  color="primary"
-                  sx={{ mt: 0 }}
-                  size="large"
-                  href="https://uv.baton-self.fr"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Accèder
-                </Button>
-            </CardContent>
-          </CardActionArea>
-      </Card>
+      <UvPromoCard />
       
       <Box
         sx={{
