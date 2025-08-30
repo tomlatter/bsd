@@ -2,6 +2,7 @@ import { Box } from '@mui/material'
 import ExpandableSection from '../components/ExpandableSection'
 import ClubPromoCard from '../components/ClubPromoCard'
 import { Helmet } from 'react-helmet-async';
+import ThickBackgroundDecor from '../components/BackgroundDecor';
 
 export default function Cours() {
   return (
@@ -11,6 +12,8 @@ export default function Cours() {
         <meta name="description" content="Cours de  
           Bâton de Combat et Self-Défense. Le B.S-D est actuellement enseigné à Toulouse avec cours d'essai gratuits." />
       </Helmet>
+
+      <ThickBackgroundDecor />
     <Box sx={{ px: {xs: 0.3, md: 2}, py: 4 }}>
        
 
@@ -87,3 +90,4 @@ export default function Cours() {
     </>
   )
 }
+

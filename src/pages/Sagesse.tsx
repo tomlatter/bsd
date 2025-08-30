@@ -1,6 +1,7 @@
 import { Box, Typography } from '@mui/material'
 import ExpandableSection from '../components/ExpandableSection'
 import { Helmet } from 'react-helmet-async';
+import ThickBackgroundDecor from '../components/BackgroundDecor';
 
 export default function Sagesse() {
   return (
@@ -10,29 +11,10 @@ export default function Sagesse() {
         <meta name="description" content="Une discipline martiale combinant 
           Bâton de Combat et Self-Défense. Enseigné à Toulouse. Les principes qui guident la pratique." />
       </Helmet>
+      
+            <ThickBackgroundDecor />
     <Box sx={{ px: {xs: 0.3, md: 2}, py: 4 }}>
-             {/* <Typography
-        variant="h5"
-        sx={{
-          fontWeight: 700,
-          fontSize: {
-            xs: '1.5rem',
-            md: '2.3rem',
-          },
-          mb: 3,
-          textAlign: 'left',
-          background: 'linear-gradient(90deg,rgb(112, 18, 79),rgb(110, 35, 123),rgb(112, 18, 79))',
-          backgroundSize: '200% auto',
-          backgroundClip: 'text',
-          WebkitBackgroundClip: 'text',
-          color: 'transparent',
-          WebkitTextFillColor: 'transparent',
-        }}
-      >
-        Les principes qui guident le B.S-D
-      </Typography> */}
-
-
+       
       <Box
         sx={{
           display: "flex",
@@ -40,7 +22,7 @@ export default function Sagesse() {
           // alignItems: "center",
           // justifyContent: "center",
           gap: 1,
-          mt: 3,
+          mt: 1,
           mb: 10,
           px: 2,
           maxWidth: 650,

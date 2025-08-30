@@ -1,6 +1,7 @@
 import { Box } from '@mui/material'
 import ExpandableSection from '../components/ExpandableSection'
 import { Helmet } from 'react-helmet-async';
+import ThickBackgroundDecor from '../components/BackgroundDecor';
 
 export default function Origines() {
   return (
@@ -10,6 +11,8 @@ export default function Origines() {
         <meta name="description" content="<Les origines du BSD - 
           Bâton de Combat et Self-Défense. Enseigné à Toulouse." />
       </Helmet>
+      
+            <ThickBackgroundDecor />
     <Box sx={{ px: {xs: 0.3, md: 2}, py: 4 }}>
       {/* <Typography
         variant="h5"

@@ -1,6 +1,7 @@
 import { Box } from '@mui/material'
 import ExpandableSection from '../components/ExpandableSection'
 import { Helmet } from 'react-helmet-async';
+import ThickBackgroundDecor from '../components/BackgroundDecor';
 
 export default function Techniques() {
   return (
@@ -10,6 +11,8 @@ export default function Techniques() {
         <meta name="description" content="Une discipline martiale combinant 
           Bâton de Combat et Self-Défense. Approche moderne des techniques de défense à mains nues et au bâton." />
       </Helmet>
+      
+            <ThickBackgroundDecor />
     <Box sx={{ px: {xs: 0.3, md: 2}, py: 4 }}>
        {/* <Typography
         variant="h5"

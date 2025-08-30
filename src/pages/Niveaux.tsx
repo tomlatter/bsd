@@ -2,6 +2,7 @@ import { Box } from '@mui/material'
 import ExpandableSection from '../components/ExpandableSection'
 import { Helmet } from 'react-helmet-async';
 import UvPromoCard from  '../components/UvPromoCard'
+import ThickBackgroundDecor from '../components/BackgroundDecor';
 
 export default function Niveaux() {
   return (
@@ -11,6 +12,8 @@ export default function Niveaux() {
         <meta name="description" content="Une discipline martiale combinant 
           Bâton de Combat et Self-Défense. Enseigné à Toulouse. Les ceintures, titres et protocoles." />
       </Helmet>
+      
+            <ThickBackgroundDecor />
       
     <Box sx={{ px: {xs: 0.3, md: 2}, py: 4 }}>
        {/* <Typography

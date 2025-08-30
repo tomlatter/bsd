@@ -11,6 +11,7 @@ import self_img from "/img/self.png";
 import baton_img from "/img/baton.png";
 import { Helmet } from 'react-helmet-async';
 
+
 const cards = [
   {
     title: 'Origines',
@@ -63,9 +64,12 @@ export default function Accueil() {
     <>     
      <Helmet>
         <title>BSD Officiel | Acceuil</title>
-        <meta name="description" content="Une discipline martiale combinant 
+        <meta name="description" content="La discipline martiale française 
           Bâton de Combat et Self-Défense. Enseigné à Toulouse." />
       </Helmet>
+
+      <BackgroundDecor />
+      
     <Box sx={{ px: 2, maxWidth: 1400, mx: 'auto', mt: {
        xs: 1,
        md: 1
@@ -89,12 +93,13 @@ export default function Accueil() {
           variant="h5"
           sx={{
             fontWeight: 700,
+            pt: { xs: 0, md: 8 },
             fontSize: {
               xs: '1.6rem',
               md: '2.3rem',
             },
             mb: 1,
-            textAlign: 'left',
+            textAlign: 'center',
             background: 'linear-gradient(90deg,rgb(112, 18, 79),rgb(110, 35, 123),rgb(112, 18, 79))',
             backgroundSize: '200% auto',
             backgroundClip: 'text',
@@ -111,27 +116,32 @@ export default function Accueil() {
       sx={{
         color: 'text.primary',
         mb: 2,
+            textAlign: 'center',
         fontSize: { xs: '1.2rem', md: '1.6rem' },
         fontWeight: 500,
       }}
     >
-      Une discipline martiale combinant <br />
-      <strong>Bâton de Combat</strong> et <strong>Self-Défense</strong>.
+      La discipline martiale française <br />
+      <strong>Bâton de Combat</strong>. <strong>Self-Défense</strong>
     </Typography>
 
-  <Typography
-    variant="body1"
-    sx={{
-      color: "#2a2a2a",
-      fontSize: { xs: "1rem", md: "1.5rem" },
-      maxWidth: 500,
-      mt: 6,
-      mx: { xs: "auto", md: 0 },
-    }}
-  >
-    Développez votre confiance, améliorez vos capacités techniques 
-    et découvrez une approche moderne du combat et de la défense.
-  </Typography>
+<Typography
+  variant="body1"
+  sx={{
+    display: "inline-block",
+    fontSize: { xs: "1.4rem", md: "1.6rem" },
+    fontWeight: 400,
+    color: " #70124f",
+    textAlign: 'center',
+    py: 1,
+    px: 3,
+    mt: 9,
+    mx: { xs: "auto", md: 0 },
+  }}
+>
+  Développez votre confiance, améliorez vos capacités techniques
+  et découvrez une approche moderne du combat et de la défense.
+</Typography>
 
 
   </Box>
@@ -200,7 +210,7 @@ export default function Accueil() {
                     sx={{
                       textTransform: 'none',
                       fontWeight: 500,
-                      backgroundColor: '#ffffff',
+                      backgroundColor: '#fff3e4', 
                       borderRadius: 0,
                       px: 3,
                       mb: 2,
@@ -219,7 +229,7 @@ export default function Accueil() {
           </Box>
   </Box>
 </Box>
-<Box sx={{ maxWidth: 900, mx: "auto", textAlign: "center", mt: 10, px: 2 }}>
+<Box sx={{ maxWidth: 900, mx: "auto", textAlign: "center", mt: 10, px: {xs: 0, sm: 2} }}>
   {/* Heading */}
   <Typography
     variant="h5"
@@ -242,7 +252,7 @@ export default function Accueil() {
   <Typography
     variant="body1"
     sx={{
-      fontSize: { xs: "1rem", md: "1.3rem" },
+      fontSize: { xs: "1.1rem", md: "1.3rem" },
       lineHeight: 1.8,
       color: "#2a2a2a",
       mb: 3,
@@ -268,7 +278,7 @@ export default function Accueil() {
   <Typography
     variant="body1"
     sx={{
-      fontSize: { xs: "1rem", md: "1.3rem" },
+      fontSize: { xs: "1.1rem", md: "1.3rem" },
       lineHeight: 1.8,
       color: "#2a2a2a",
     }}
@@ -551,7 +561,7 @@ export default function Accueil() {
                 <CardContent
                   sx={{
                     width: '100%',
-                    backgroundColor: '#fff',
+                    backgroundColor: {xs: '#fff9f2ff', sm: '#fff9ebff'},
                     padding: 2,
                     flexGrow: 1,
                   }}
@@ -576,3 +586,52 @@ export default function Accueil() {
     </>
   )
 }
+
+function BackgroundDecor() {
+  return (
+    <Box
+      aria-hidden
+      sx={{
+        position: 'fixed',
+        inset: 0,
+        zIndex: -3,
+        backgroundColor: '#fff9f2', // base cream
+        // TOP MAIN DIAGONAL
+        '&::before': {
+          content: '""',
+          position: 'absolute',
+          inset: 0,
+          width: '150%',
+          height: {xs: '38vh', sm:'40vh'},
+          background:
+            'linear-gradient(90deg, #28d0f2 0%, #6c1aa5 55%, #70124f 100%)',
+          transform: 'rotate(-6deg) translate(-10%, -22%)',
+          transformOrigin: 'top left',
+          opacity: 0.12,
+          pointerEvents: 'none',
+          filter: 'saturate(120%)',
+        },
+        // LOWER SOFT RIBBON (very subtle, opposite angle)
+        '&::after': {
+          content: '""',
+          position: 'absolute',
+          left: '-20%',
+          bottom: '-12vh',
+          width: '160%',
+          height: '36vh',
+          background:
+            'linear-gradient(90deg, rgba(40,208,242,0.12), rgba(108,26,165,0.12) 55%, rgba(112,18,79,0.12))',
+          transform: 'rotate(5deg)',
+          transformOrigin: 'bottom left',
+          pointerEvents: 'none',
+          // Feather the top edge so it blends into cream
+          maskImage:
+            'linear-gradient(to top, rgba(0,0,0,1) 40%, rgba(0,0,0,0) 100%)',
+          WebkitMaskImage:
+            'linear-gradient(to top, rgba(0,0,0,1) 40%, rgba(0,0,0,0) 100%)',
+        },
+      }}
+    />
+  );
+}
+
