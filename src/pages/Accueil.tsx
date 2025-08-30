@@ -116,13 +116,13 @@ export default function Accueil() {
       }}
     >
       Une discipline martiale combinant <br />
-      <strong>Bâton de Combat</strong> et <strong>Self-Défense</strong>
+      <strong>Bâton de Combat</strong> et <strong>Self-Défense</strong>.
     </Typography>
 
   <Typography
     variant="body1"
     sx={{
-      color: "text.secondary",
+      color: "#2a2a2a",
       fontSize: { xs: "1rem", md: "1.5rem" },
       maxWidth: 500,
       mt: 6,
@@ -224,7 +224,7 @@ export default function Accueil() {
   <Typography
     variant="h5"
     sx={{
-      fontWeight: 700,
+      fontWeight: 600,
       mb: 3,
         background: 'linear-gradient(90deg,rgb(112, 18, 79),rgb(110, 35, 123),rgb(112, 18, 79))',
         backgroundSize: '200% auto',
@@ -244,15 +244,21 @@ export default function Accueil() {
     sx={{
       fontSize: { xs: "1rem", md: "1.3rem" },
       lineHeight: 1.8,
-      color: "text.secondary",
+      color: "#2a2a2a",
       mb: 3,
     }}
   >
-    <strong>Le combat au bâton long</strong> existe partout dans le monde
-    depuis que l’Homme existe. En France, dans les périodes violentes comme au moyen-âge, c’était un fidèle compagnon. 
-    Il aidait à marcher, descendre à flanc de montagne, gauler des fruits, passer à gué des rivières et surtout se défendre. 
-    Enseigné dans <strong>l’armée napoléonienne</strong>, il a
-    traversé les siècles grâce à des maîtres passionnés.
+    <Box component="span" sx={{ fontWeight: 600, color: "#2a2a2a" }}>
+      Le combat au bâton long
+    </Box>{" "}
+    existe partout dans le monde depuis que l’Homme existe. En France, dans les
+    périodes violentes comme au moyen-âge, c’était un fidèle compagnon. Il aidait
+    à marcher, descendre à flanc de montagne, gauler des fruits, passer à gué des
+    rivières et surtout se défendre. Enseigné dans{" "}
+    <Box component="span" sx={{ fontWeight: 600, color: "#2a2a2a" }}>
+      l’armée napoléonienne
+    </Box>
+    , il a traversé les siècles grâce à des maîtres passionnés.
   </Typography>
 
   {/* Divider for visual break */}
@@ -264,13 +270,25 @@ export default function Accueil() {
     sx={{
       fontSize: { xs: "1rem", md: "1.3rem" },
       lineHeight: 1.8,
-      color: "text.secondary",
+      color: "#2a2a2a",
     }}
   >
-    Créé à <strong>Toulouse</strong> par <strong>Jean Louis Brinker</strong> en
-    1980, le <strong>B.S-D</strong> s’inscrit dans cette tradition française tout en y intègrant la self-défense à mains nues.
-    Cette discipline s’adresse aux femmes, hommes, ados et adultes, en
-    proposant des techniques réalistes, efficaces et accessibles.
+    Créé à{" "}
+    <Box component="span" sx={{ fontWeight: 600, color: "#2a2a2a" }}>
+      Toulouse
+    </Box>{" "}
+    par{" "}
+    <Box component="span" sx={{ fontWeight: 600, color: "#2a2a2a" }}>
+      Jean Louis Brinker
+    </Box>{" "}
+    en 1980, le{" "}
+    <Box component="span" sx={{ fontWeight: 600, color: "#2a2a2a" }}>
+      B.S-D
+    </Box>{" "}
+    s’inscrit dans cette tradition française tout en y intègrant la
+    self-défense à mains nues. Cette discipline s’adresse aux femmes, hommes,
+    ados et adultes, en proposant des techniques réalistes, efficaces et
+    accessibles.
   </Typography>
 </Box>
  <Box
@@ -297,7 +315,7 @@ export default function Accueil() {
   {/* Top Section with Off White and Rounded Bottom */}
   <Box
     sx={{
-      backgroundColor: "#eeeee1", 
+      backgroundColor: "#fff3e4", 
       height: "55%",
       position: "absolute",
       top: 0,
@@ -331,7 +349,7 @@ export default function Accueil() {
     <Typography
       variant="h5"
       sx={{
-        color: "#eeeee1", 
+        color: "#fff3e4", 
         fontWeight: 700,
         mb: 2,
       }}
@@ -342,7 +360,7 @@ export default function Accueil() {
       variant="body1"
       sx={{
         fontSize: { xs: "0.95rem", md: "1.05rem" },
-        color: "#eeeee1", 
+        color: "#fff3e4", 
         lineHeight: 1.6,
       }}
     >
@@ -354,21 +372,22 @@ export default function Accueil() {
 
 
   {/* Card 2: Self-Défense */}
-      <Card
+<Card
   sx={{
     flex: 1,
     maxWidth: 400,
     borderRadius: 3,
     overflow: "hidden",
     boxShadow: 3,
+    border: "none",
     position: "relative",
     backgroundColor: "#6b1ca0", // Bottom purple
-    color: "#fff",
+    color: "#fff3e4",
   }}
 >
-      <Box
+  <Box
     sx={{
-      backgroundColor: "#eeeee1", 
+      backgroundColor: "#fff3e4", 
       height: "55%",
       position: "absolute",
       top: 0,
@@ -385,7 +404,7 @@ export default function Accueil() {
         textAlign: "center",
       p: 3,
       position: "relative",
-      zIndex: 2, // To stay above the background layer
+      zIndex: 2, 
       }}
     >
       <Box
@@ -404,7 +423,7 @@ export default function Accueil() {
       <Typography
         variant="h5"
         sx={{
-          color: "#eeeee1",
+          color: "#fff3e4",
           fontWeight: 700,
           mb: 2,
         }}
@@ -415,7 +434,7 @@ export default function Accueil() {
         variant="body1"
         sx={{
           fontSize: { xs: "0.95rem", md: "1.05rem" },
-        color: "#eeeee1", 
+        color: "#fff3e4", 
           lineHeight: 1.6,
         }}
       >
@@ -537,10 +556,10 @@ export default function Accueil() {
                     flexGrow: 1,
                   }}
                 >
-                  <Typography variant="h6" fontWeight="bold" color="text.primary">
+                  <Typography variant="h6" sx={{fontWeight: 600}} color="text.primary">
                     {card.title}
                   </Typography>
-                  <Typography variant="body2" color="text.secondary"
+                  <Typography variant="body2" color="text"
                     sx={{
                       fontSize: { xs: "0.95rem", md: "1.05rem" }
                     }}>

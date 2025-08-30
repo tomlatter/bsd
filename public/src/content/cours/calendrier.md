@@ -1,4 +1,3 @@
-# **Calendrier & Infos sur les cours BSD**
 
 📍 **Lieu des cours :**  
 Gymnase Anatole France  
@@ -13,7 +12,7 @@ Gymnase Anatole France
 
 ---
 
-## 🔔 **Organisation des cours**
+## 🔔 Organisation des cours
 - **Interruption prévue pendant Noël**  
 - Pendant les vacances scolaires : cours **selon disponibilité des Enseignant(e)s**  
 - Communication via :
@@ -23,7 +22,7 @@ Gymnase Anatole France
 
 ---
 
-## **Lundis soirs – B.S-D Self-Défense**
+## Lundis soirs – B.S-D Self-Défense
 **Cours de Self-Défense à mains nues** :  
 *Programme (non exhaustif) :*
 - Pieds-poings
@@ -37,7 +36,7 @@ Gymnase Anatole France
 
 ---
 
-## **Jeudis soirs – B.S-D Bâton de combat**
+## Jeudis soirs – B.S-D Bâton de combat
 **Programme technique :**
 - Techniques de frappe, parades et contres
 - Piques, blocages, balayages, chassés, dégagements, percussions
@@ -51,7 +50,7 @@ Gymnase Anatole France
 
 ---
 
-## 📄 **Documents à fournir au secrétariat**
+## 📄 Documents à fournir au secrétariat
 
 ### ✅ **IMPORTANT**
 Dès plus de **2 cours**, vous devez :  
@@ -61,13 +60,13 @@ Dès plus de **2 cours**, vous devez :
 
 ---
 
-### **Feuille d’inscription : objectifs**
+### Feuille d’inscription : objectifs
 1. Tenir à jour la liste d’occupation du gymnase demandée par la mairie  
 2. Garantir l’orthographe correcte pour certificats (ceintures) et licences UFOLEP  
 
 ---
 
-### **Certificat médical**
+## Certificat médical
 - Obligatoire pour la pratique des Arts Martiaux  
 - Mentionner au médecin :
   - **Pas de compétition sportive en Self-Défense**
@@ -77,7 +76,7 @@ Dès plus de **2 cours**, vous devez :
 
 ---
 
-## 💳 **Cotisation**
+## 💳 Cotisation
 - **Cotisation + Licence pour la saison : 150 €**  
 *(Votée en Assemblée Générale le 26/06/2023)*  
 - Inclus :

@@ -27,10 +27,13 @@ interface ExpandableSectionProps {
   title: string
   mdPath: string
   subtitle: string
-  imagePath: string // ✅ New prop
+  imagePath: string 
+  imgBgColor: string
+  bgColor: string
+  chipText: string 
 }
 
-export default function ExpandableSection({ title, mdPath, subtitle, id, imagePath }: ExpandableSectionProps) {
+export default function ExpandableSection({ title, mdPath, subtitle, id, imagePath, imgBgColor, bgColor }: ExpandableSectionProps) {
   const [expanded, setExpanded] = useState(false)
   const [content, setContent] = useState('')
   const [loading, setLoading] = useState(true)
@@ -84,13 +87,13 @@ export default function ExpandableSection({ title, mdPath, subtitle, id, imagePa
       id={id}
       sx={{
         mb: 2,
-        border: !expanded ? '0px solid #ccc' : '3px solid #70124f',
+        border: 'none', 
+        boxShadow: {xs: (!expanded ? 1 : 'none'), sm: 1 }, 
         cursor: 'pointer',
-        backgroundColor: !expanded ? '#eeeee1' : '#ffffff',
+        backgroundColor: !expanded ? bgColor : '#ffffff',
         position: 'relative',
         display: 'flex',
-        flexDirection: 'column',
-        '&:hover': { backgroundColor: !expanded ? '#e4e4d4ff' : '#fff' },
+        flexDirection: 'column'
       }}
       onClick={() => {
         const next = !expanded
@@ -119,50 +122,78 @@ export default function ExpandableSection({ title, mdPath, subtitle, id, imagePa
               width: 120,
               height: 120,
               objectFit: 'cover',
-              backgroundColor: "#fedad6"
+              backgroundColor: imgBgColor
             }}
           />
           {/* ✅ Title & Subtitle */}
           <Box sx={{ flex: 1, px: {xs: 2, md: 4}, display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
-            <Typography variant="h6" fontWeight="bold" sx={{ fontSize: { xs: '1rem', md: '1.5rem' } }}>
+            <Typography variant="h6" fontWeight="bold" sx={{ fontSize: { xs: '1rem', md: '1.5rem' },
+                fontWeight : 600 }}>
               {title}
             </Typography>
-            <Typography variant="body2" color="text.secondary" 
+            <Typography variant="body2" color="text.primary" 
             sx={{
                 mt: 0.5,
-                fontSize: { xs: "0.9rem", md: "1.3rem" },
+                fontSize: { xs: "0.9rem", md: "1.3rem" }
              }}>
               {subtitle}
             </Typography>
+
+            {/* <Box
+              component="a"
+              href="https://uv.baton-self.fr"
+              target="_blank"
+              rel="noopener noreferrer"
+              sx={{
+                display: "inline-block",
+                alignSelf: { xs: "flex-start", md: "center" },
+                fontWeight: 600,
+                fontSize: { xs: "0.7rem", md: "0.9rem" },
+                px: { xs: 2.5, md: 3 },
+                py: { xs: 0.6, md: 0.8 },
+                borderRadius: 3,
+                backgroundColor: "white",
+                color: "black",
+                textDecoration: "none",
+                cursor: "pointer"
+              }}
+            >
+              {chipText}
+            </Box> */}
+
+
           </Box>
         </Box>
       )}
 
       {/* ✅ Expand Button */}
-      <ExpandMore
-        expand={expanded}
-        onClick={handleToggle}
-        aria-expanded={expanded}
-        aria-label="expand"
-        sx={{
-          position: 'absolute',
-          top: 8,
-          right: 8,
-          width: 48,
-          height: 48,
-        }}
-      >
-        <ExpandMoreIcon sx={{ fontSize: 32 }} />
-      </ExpandMore>
+      {expanded && (
+        <ExpandMore
+          expand={expanded}
+          onClick={handleToggle}
+          aria-expanded={expanded}
+          aria-label="expand"
+          sx={{
+            position: 'absolute',
+            top: 8,
+            right: 8,
+            width: 48,
+            height: 48,
+          }}
+        >
+          <ExpandMoreIcon sx={{ fontSize: 32 }} />
+        
+        </ExpandMore>
+      )}
 
       {/* ✅ Expanded Content */}
       <Collapse in={expanded} timeout="auto" unmountOnExit>
-        <Box sx={{ p: 3 }}>
+        <Box sx={{ p: 3 , px: {xs: 1, sm: 3 } }}>
            <Typography
               variant="h6"
               fontWeight="bold"
               gutterBottom
-              sx={{ mt: 0, fontSize: { xs: '1.1rem', md: '1.5rem' } }}
+              sx={{ mt: 0, fontSize: { xs: '1.1rem', md: '1.5rem' }, fontWeight: 600 }}
             >
               {title}
             </Typography>
@@ -207,10 +238,10 @@ export default function ExpandableSection({ title, mdPath, subtitle, id, imagePa
           <ReactMarkdown
             components={{
               h1: ({ node, ...props }) => (
-                <Typography variant="h4" gutterBottom sx={{ mt: 4, mb: 2, fontWeight: 'bold' }} {...props} />
+                <Typography variant="h4" gutterBottom sx={{ mt: 4, mb: 2, fontWeight: 500 }} {...props} />
               ),
               h2: ({ node, ...props }) => (
-                <Typography variant="h5" gutterBottom sx={{ mt: 4, mb: 2, fontWeight: 600, color: 'primary.main' }} {...props} />
+                <Typography variant="h5" gutterBottom sx={{ mt: 4, mb: 2, fontWeight: 500, color: 'primary.main' }} {...props} />
               ),
               h3: ({ node, ...props }) => (
                 <Typography variant="h6" gutterBottom sx={{ mt: 3, mb: 1.5, fontWeight: 500 }} {...props} />

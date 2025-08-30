@@ -6,7 +6,7 @@ Le B.S-D permet aux femmes, grâce aux techniques de **bâton long ou court**, d
 
 ---
 
-### La puissance des armes
+## La puissance des armes
 
 Il faut savoir qu’un bâton manipulé par une experte peut générer des impacts impressionnants :
 
@@ -20,7 +20,7 @@ L’étude des **armes contondantes** est donc **une affaire précise et sérieu
 
 ---
 
-### Exemple en vidéo
+## Exemple en vidéo
 
 📹 *Vidéo d'un assaut au bâton long (1m60 en rotin) entre une femme et un homme – 20 mai 2001*  
 👉 [Voir la vidéo](https://www.youtube.com/watch?v=LdKZey453BM)
@@ -32,7 +32,7 @@ La **photo ci-dessous**, et la **torsion des bâtons à l’impact** provoqué p
 
 ---
 
-### Maîtrise et expertise
+## Maîtrise et expertise
 
 - **4 ans** pour obtenir la **maîtrise des bases** en combat au bâton  
 - Environ **2 ans de plus** pour savoir **enseigner et transmettre**  
@@ -40,7 +40,7 @@ La **photo ci-dessous**, et la **torsion des bâtons à l’impact** provoqué p
 
 ---
 
-#### Exemples techniques illustrés :
+### Exemples techniques illustrés :
 
 ![Alt text](/img/feminin/1.jpg)
 
@@ -56,7 +56,7 @@ La **photo ci-dessous**, et la **torsion des bâtons à l’impact** provoqué p
 
 ---
 
-### Particularités de la Self-Défense féminine
+## Particularités de la Self-Défense féminine
 
 En B.S-D, la **Self-Défense Féminine** fait partie intégrante des **cours de Self-Défense mixte**.
 
@@ -78,7 +78,7 @@ La Self-Défense est une **caisse à outils** :
 
 ---
 
-#### Autres techniques illustrées :
+### Autres techniques illustrées :
 
 ![Alt text](/img/feminin/4.jpg)
 

@@ -1,6 +1,6 @@
 ---
 
-### Liberté de pratique et unité du B.S-D
+## Liberté de pratique et unité du B.S-D
 
 Le pratiquant peut faire le choix de **ne pas pratiquer toutes les disciplines du B.S-D**  
 et peut réduire son apprentissage à :
@@ -15,7 +15,7 @@ un **bon équilibre physique et mental**.
 
 ---
 
-### Pas de grades, mais une progression humaine
+## Pas de grades, mais une progression humaine
 
 En B.S-D, **il n’existe aucun passage de grade**.  
 La progression est :
@@ -30,7 +30,7 @@ La progression est :
 
 ---
 
-### L’essentiel
+## L’essentiel
 
 > L’essentiel est d’**être bien dans sa peau**  
 > et de **vivre le mieux possible**,  
@@ -39,9 +39,9 @@ La progression est :
 
 ---
 
-### Les bienfaits de la pratique
+## Les bienfaits de la pratique
 
-#### Sur le plan moral
+### Sur le plan moral
 
 Le fait de se **retrouver ensemble**,  
 de pratiquer avec des partenaires :
@@ -52,7 +52,7 @@ de pratiquer avec des partenaires :
 Cela **fait du bien au moral**  
 et aide chacun à **progresser soi-même**.
 
-#### Sur le plan physique
+### Sur le plan physique
 
 Outre ses **qualités de self-défense incontestées** parmi les plus grands experts d’arts martiaux,  
 le **combat au bâton long** permet :

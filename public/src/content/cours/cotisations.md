@@ -1,4 +1,4 @@
-# **Entraînements BSD – Saison 2025-2026**
+## Entraînements BSD – Saison 2025-2026
 
 📍 **Lieu :**  
 Gymnase Anatole France  
@@ -10,7 +10,7 @@ De **septembre 2025** à **juin 2026**
 
 ---
 
-## 🕐 **Horaires des cours**
+## 🕐 Horaires des cours
 - **Lundis (20h – 22h)** :  
   *Cours d'essai en Self-Défense :* **GRATUIT**  
 - **Jeudis (20h – 22h)** :  
@@ -18,7 +18,7 @@ De **septembre 2025** à **juin 2026**
 
 ---
 
-## 💳 **Cotisation & Licence / Assurance**
+## 💳 Cotisation & Licence / Assurance
 - **Septembre 2025 – Juin 2026 :**  
   **150 € / an**  
   *(Licence : 40 € + Cours : 110 €)*
@@ -30,14 +30,14 @@ De **septembre 2025** à **juin 2026**
 
 ---
 
-### **Historique des cotisations**
+### Historique des cotisations
 - 2017-2022 : 145 € / an  
 - Juin 2022 : Passage à **150 € / an** (inflation, etc.)  
 - Cotisation maintenue **sans augmentation pendant 5 ans** grâce au bénévolat.
 
 ---
 
-## 👕 **Tenue BSD**
+## 👕 Tenue BSD
 - **Obligatoire :**
   - T-shirt BSD France **noir** (ou **violet** pour le bâton)
   - Pantalon noir
@@ -48,7 +48,7 @@ De **septembre 2025** à **juin 2026**
 
 ---
 
-## ℹ️ **Informations importantes**
+## ℹ️ Informations importantes
 - Cotisation couvre **cours réguliers les lundis et jeudis soir**  
 - Paiement possible en **2 ou 3 fois** (décision AG du 25 juin 2012)  
 - **Non remboursable**, quelle que soit la période  
@@ -58,7 +58,7 @@ De **septembre 2025** à **juin 2026**
 
 ---
 
-### **Vacances et jours fériés**
+### Vacances et jours fériés
 - Généralement **pas d’interruption** pendant vacances scolaires (sauf Noël/Jour de l’An et juillet-août)  
 - Jours fériés : Cours **selon disponibilité des Enseignant(e)s**  et le nombre de participants
 
@@ -80,7 +80,7 @@ Un lien **Framadate** est envoyé par mail chaque semaine pour s'inscrire aux co
 
 ---
 
-## 🧾 **Licence / Assurance**
+## 🧾 Licence / Assurance
 - Valable **du 1er septembre au 31 août**  
 - Obligatoire pour pratiquer régulièrement  
 - Nécessite un **certificat médical < 1 an** la première année  
@@ -94,7 +94,7 @@ Un lien **Framadate** est envoyé par mail chaque semaine pour s'inscrire aux co
 
 ---
 
-## 📅 **Tarifs par trimestre**
+## 📅 Tarifs par trimestre
 
 **Septembre – Juin :** 150 €  
 **Octobre – Juin :** 135 €  
@@ -111,18 +111,18 @@ Un lien **Framadate** est envoyé par mail chaque semaine pour s'inscrire aux co
 
 ---
 
-## 🎁 **Cours d'essai**
+## 🎁 Cours d'essai
 Gratuit
 
 ---
 
-## 🗂️ **Cours à la carte**
+## 🗂️ Cours à la carte
 - Licence / assurance : **40 €**
 - Cours de 2h : **20 €**
 
 ---
 
-## 🤝 **Conventions possibles**
+## 🤝 Conventions possibles
 - Formations (self-défense)
 - Établissements de soins
 - Employés en contact avec le public

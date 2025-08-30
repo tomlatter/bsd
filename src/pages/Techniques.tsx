@@ -1,4 +1,4 @@
-import { Box, Typography } from '@mui/material'
+import { Box } from '@mui/material'
 import ExpandableSection from '../components/ExpandableSection'
 import { Helmet } from 'react-helmet-async';
 
@@ -11,10 +11,10 @@ export default function Techniques() {
           Bâton de Combat et Self-Défense. Approche moderne des techniques de défense à mains nues et au bâton." />
       </Helmet>
     <Box sx={{ px: {xs: 0.3, md: 2}, py: 4 }}>
-       <Typography
+       {/* <Typography
         variant="h5"
         sx={{
-          fontWeight: 700,
+          fontWeight: 500,
           fontSize: {
             xs: '1.5rem',
             md: '2.3rem',
@@ -30,29 +30,49 @@ export default function Techniques() {
         }}
       >
        Techniques
-      </Typography>
+      </Typography> */}
 
 
       <ExpandableSection
-          id="distances"
+        id="distances"
         title="Distances"
-        mdPath="/src/content/techniques/distances.md" subtitle={'Distances et Techniques de combat en B.S-D.'}
-          imagePath="/img/sections/distances.png"      />
+        mdPath="/src/content/techniques/distances.md"
+        subtitle={'Distances et Techniques de combat en B.S-D.'}
+        imagePath="/img/sections/distances.png"  
+        imgBgColor="#fedad6"
+        bgColor="#fff3e4"
+        chipText="Découvrir"
+      />
       <ExpandableSection
-          id="schema"
+        id="schema"
         title="Schéma"
-        mdPath="/src/content/techniques/frappes-baton.md" subtitle={'Schéma des techniques de frappes au bâton.'}
-          imagePath="/img/sections/schema.png"      />
+        mdPath="/src/content/techniques/frappes-baton.md"
+        subtitle={'Schéma des techniques de frappes au bâton.'}
+        imagePath="/img/sections/schema.png"  
+        imgBgColor="#fedad6"
+        bgColor="#fff3e4"
+        chipText="Découvrir"
+      />
       <ExpandableSection
-          id="enchainements"
+        id="enchainements"
         title="Enchainements"
-        mdPath="/src/content/techniques/enchainements.md" subtitle={'Les enchaînements techniques et codifés au bâton.'}
-          imagePath="/img/sections/enchainements.png"      />
+        mdPath="/src/content/techniques/enchainements.md"
+        subtitle={'Les enchaînements techniques et codifés au bâton.'}
+        imagePath="/img/sections/enchainements.png"  
+        imgBgColor="#fedad6"
+        bgColor="#fff3e4"
+        chipText="Découvrir"
+      />
       <ExpandableSection
-          id="enerigies"
+        id="enerigies"
         title="Energies"
-        mdPath="/src/content/techniques/energies.md" subtitle={'Energie interne - Energie externe'}
-          imagePath="/img/sections/energies.png"      />
+        mdPath="/src/content/techniques/energies.md"
+        subtitle={'Energie interne - Energie externe'}
+        imagePath="/img/sections/energies.png"  
+        imgBgColor="#fedad6"
+        bgColor="#fff3e4"
+        chipText="Découvrir"
+      />
     </Box>
     </>
   )
