@@ -137,6 +137,7 @@ export default function Accueil() {
     px: 3,
     mt: 9,
     mx: { xs: "auto", md: 0 },
+    textShadow: "1px 1px 2px rgba(0,0,0,0.15)",
   }}
 >
   Développez votre confiance, améliorez vos capacités techniques
@@ -210,7 +211,7 @@ export default function Accueil() {
                     sx={{
                       textTransform: 'none',
                       fontWeight: 500,
-                      backgroundColor: '#fff3e4', 
+                      backgroundColor: '#fff', 
                       borderRadius: 0,
                       px: 3,
                       mb: 2,
@@ -291,12 +292,11 @@ export default function Accueil() {
     <Box component="span" sx={{ fontWeight: 600, color: "#2a2a2a" }}>
       Jean Louis Brinker
     </Box>{" "}
-    en 1980, le{" "}
+    en 1980, le B.S-D s’inscrit dans cette tradition française tout en y intègrant{" "}
     <Box component="span" sx={{ fontWeight: 600, color: "#2a2a2a" }}>
-      B.S-D
+      la self-défense à mains nues.
     </Box>{" "}
-    s’inscrit dans cette tradition française tout en y intègrant la
-    self-défense à mains nues. Cette discipline s’adresse aux femmes, hommes,
+     Cette discipline s’adresse aux femmes, hommes,
     ados et adultes, en proposant des techniques réalistes, efficaces et
     accessibles.
   </Typography>
@@ -479,6 +479,7 @@ export default function Accueil() {
         lineHeight: 1.75,
         mb: 1,
         maxWidth: 900,
+        textShadow: "1px 1px 2px rgba(0,0,0,0.15)",
       }}
     >
       “Eduquer le corps aux techniques martiales, c'est éveiller l'esprit à la
@@ -582,6 +583,7 @@ export default function Accueil() {
         ))}
 
       </Box>
+
     </Box>
     </>
   )
@@ -602,7 +604,7 @@ function BackgroundDecor() {
           position: 'absolute',
           inset: 0,
           width: '150%',
-          height: {xs: '38vh', sm:'40vh'},
+          height: {xs: '40vh', sm:'40vh'},
           background:
             'linear-gradient(90deg, #28d0f2 0%, #6c1aa5 55%, #70124f 100%)',
           transform: 'rotate(-6deg) translate(-10%, -22%)',

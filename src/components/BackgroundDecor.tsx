@@ -8,14 +8,14 @@ export default function ThickBackgroundDecor() {
         position: 'fixed',
         inset: 0,
         zIndex: -3,
-        backgroundColor: '#fff9f2', // base cream
+        backgroundColor: '#fff9f3ff', // base cream
         // TOP MAIN DIAGONAL
         '&::before': {
           content: '""',
           position: 'absolute',
           inset: 0,
           width: '150%',
-          height: {xs: '38vh', sm:'90vh'},
+          height: {xs: '24vh', sm:'90vh'},
           background:
             'linear-gradient(90deg, #28d0f2 0%, #6c1aa5 55%, #70124f 100%)',
           transform: 'rotate(-6deg) translate(-10%, -22%)',
@@ -31,7 +31,7 @@ export default function ThickBackgroundDecor() {
           left: '-20%',
           bottom: '-12vh',
           width: '160%',
-          height: '36vh',
+          height: {xs: '0vh', sm: '66vh'},
           background:
             'linear-gradient(90deg, rgba(40,208,242,0.12), rgba(108,26,165,0.12) 55%, rgba(112,18,79,0.12))',
           transform: 'rotate(5deg)',

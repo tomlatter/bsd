@@ -13,7 +13,7 @@ export default function Sagesse() {
       </Helmet>
       
             <ThickBackgroundDecor />
-    <Box sx={{ px: {xs: 0.3, md: 2}, py: 4 }}>
+    <Box sx={{ px: {xs: 0.3, md: 2}, py: 4, mt: {xs: -5, sm: 0}, mb: {xs: -12, sm: 0} }}>
        
       <Box
         sx={{
@@ -40,6 +40,7 @@ export default function Sagesse() {
             lineHeight: 1.75,
             mb: 1,
             maxWidth: 900,
+            textShadow: "1px 1px 2px rgba(0,0,0,0.15)",
           }}
         >
           “C'est par l'entraide et les concessions mutuelles qu'un organisme groupant des individus, 

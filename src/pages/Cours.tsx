@@ -14,7 +14,7 @@ export default function Cours() {
       </Helmet>
 
       <ThickBackgroundDecor />
-    <Box sx={{ px: {xs: 0.3, md: 2}, py: 4 }}>
+    <Box sx={{ px: {xs: 0.3, md: 2}, py: 4, mt: {xs: -5, sm: 0}, mb: {xs: -12, sm: 0} }}>
        
 
       <ClubPromoCard/>

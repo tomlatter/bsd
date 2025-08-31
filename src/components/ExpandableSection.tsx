@@ -90,7 +90,7 @@ export default function ExpandableSection({ title, mdPath, subtitle, id, imagePa
         border: 'none', 
         boxShadow: {xs: (!expanded ? 1 : 'none'), sm: 1 }, 
         cursor: 'pointer',
-        backgroundColor: !expanded ? bgColor : '#ffffff',
+        backgroundColor: !expanded ? bgColor : '#fff9f2',
         position: 'relative',
         display: 'flex',
         flexDirection: 'column'
