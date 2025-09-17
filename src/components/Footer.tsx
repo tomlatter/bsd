@@ -9,7 +9,8 @@ import {
   FaLinkedinIn,
   FaYoutube,
 } from "react-icons/fa";
-import logo from "img/logo.png";
+
+const logo = `${import.meta.env.BASE_URL}img/logo.png`;
 
 const Footer = () => {
   const year = new Date().getFullYear();

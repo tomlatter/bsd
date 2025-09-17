@@ -12,7 +12,7 @@ export default function UvPromoCard() {
           display: "flex",
           alignItems: "stretch",
           // put your file in /publicimg/uv-promo-bg.png (the one you liked)
-          backgroundImage: `url("img/uv_banner.png")`,
+          backgroundImage: `url("${import.meta.env.BASE_URL}img/uv_banner.png")`,
           backgroundSize: "cover",
           backgroundRepeat: "no-repeat",
           backgroundPosition: { xs: "center", md: "left center" },

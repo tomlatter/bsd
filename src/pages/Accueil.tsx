@@ -7,10 +7,10 @@ import {
   Typography,
 } from '@mui/material'
 import { useNavigate } from 'react-router-dom'
-import self_img from "img/self.png";
-import baton_img from "img/baton.png";
 import { Helmet } from 'react-helmet-async';
 
+const self_img = `${import.meta.env.BASE_URL}img/self.png`;
+const baton_img = `${import.meta.env.BASE_URL}img/baton.png`;
 
 const cards = [
   {
