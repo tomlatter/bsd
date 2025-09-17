@@ -42,15 +42,15 @@ La **photo ci-dessous**, et la **torsion des bâtons à l’impact** provoqué p
 
 ### Exemples techniques illustrés :
 
-![Alt text](${import.meta.env.BASE_URL}img/feminin/1.jpg)
+![Alt text](img/feminin/1.jpg)
 
 - **Parade et contre** sur frappe en **Revers haut**  
 
-![Alt text](${import.meta.env.BASE_URL}img/feminin/2.jpg)
+![Alt text](img/feminin/2.jpg)
 
 - **Parade et contre** sur frappe en **Biaisé bas**  
 
-![Alt text](${import.meta.env.BASE_URL}img/feminin/3.jpg)
+![Alt text](img/feminin/3.jpg)
 
 - **Assaut libre** contre un homme (**militaire**) à la **canne PVC-Mousse**
 
