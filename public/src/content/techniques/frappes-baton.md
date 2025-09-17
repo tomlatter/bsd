@@ -1,4 +1,4 @@
-![Alt text](/officiel/img/schema-techniques.jpg)
+![Alt text](img/schema-techniques.jpg)
 
 ---
 

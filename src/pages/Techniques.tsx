@@ -39,9 +39,9 @@ export default function Techniques() {
       <ExpandableSection
         id="distances"
         title="Distances"
-        mdPath="/officiel/src/content/techniques/distances.md"
+        mdPath="src/content/techniques/distances.md"
         subtitle={'Distances et Techniques de combat en B.S-D.'}
-        imagePath="/officiel/img/sections/distances.png"  
+        imagePath="img/sections/distances.png"  
         imgBgColor="#fedad6"
         bgColor="#fff3e4"
         chipText="Découvrir"
@@ -49,9 +49,9 @@ export default function Techniques() {
       <ExpandableSection
         id="schema"
         title="Schéma"
-        mdPath="/officiel/src/content/techniques/frappes-baton.md"
+        mdPath="src/content/techniques/frappes-baton.md"
         subtitle={'Schéma des techniques de frappes au bâton.'}
-        imagePath="/officiel/img/sections/schema.png"  
+        imagePath="img/sections/schema.png"  
         imgBgColor="#fedad6"
         bgColor="#fff3e4"
         chipText="Découvrir"
@@ -59,9 +59,9 @@ export default function Techniques() {
       <ExpandableSection
         id="enchainements"
         title="Enchainements"
-        mdPath="/officiel/src/content/techniques/enchainements.md"
+        mdPath="src/content/techniques/enchainements.md"
         subtitle={'Les enchaînements techniques et codifés au bâton.'}
-        imagePath="/officiel/img/sections/enchainements.png"  
+        imagePath="img/sections/enchainements.png"  
         imgBgColor="#fedad6"
         bgColor="#fff3e4"
         chipText="Découvrir"
@@ -69,9 +69,9 @@ export default function Techniques() {
       <ExpandableSection
         id="enerigies"
         title="Energies"
-        mdPath="/officiel/src/content/techniques/energies.md"
+        mdPath="src/content/techniques/energies.md"
         subtitle={'Energie interne - Energie externe'}
-        imagePath="/officiel/img/sections/energies.png"  
+        imagePath="img/sections/energies.png"  
         imgBgColor="#fedad6"
         bgColor="#fff3e4"
         chipText="Découvrir"

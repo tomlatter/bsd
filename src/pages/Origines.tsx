@@ -38,9 +38,9 @@ export default function Origines() {
       <ExpandableSection
         id="presentation"
         title="Présentation"
-        mdPath="/officiel/src/content/origines/presentation.md" 
+        mdPath="src/content/origines/presentation.md" 
         subtitle={'Une discipline moderne nourrie d’héritages anciens'}
-        imagePath="/officiel/img/sections/presentation.jpg"  
+        imagePath="img/sections/presentation.jpg"  
         imgBgColor="#fedad6"
         bgColor="#fff3e4"
         chipText="Découvrir" 
@@ -48,9 +48,9 @@ export default function Origines() {
       <ExpandableSection
         id="origines"
         title="Origines du B.S-D"
-        mdPath="/officiel/src/content/origines/origines.md" 
+        mdPath="src/content/origines/origines.md" 
         subtitle={"D'où vient le B.S-D ?"}
-        imagePath="/officiel/img/sections/origines.jpg"  
+        imagePath="img/sections/origines.jpg"  
         imgBgColor="#fedad6"
         bgColor="#fff3e4"
         chipText="Découvrir" 
@@ -58,9 +58,9 @@ export default function Origines() {
       <ExpandableSection
         id="le-griot"
         title="Le Griot Fustigeur"
-        mdPath="/officiel/src/content/origines/griot.md"
+        mdPath="src/content/origines/griot.md"
         subtitle={"Le livre autobiographique du fondateur du B.S-D"} 
-        imagePath="/officiel/img/sections/livre.png"  
+        imagePath="img/sections/livre.png"  
         imgBgColor="#fedad6"
         bgColor="#fff3e4"
         chipText="Découvrir" 
@@ -68,9 +68,9 @@ export default function Origines() {
       <ExpandableSection
         id="legitime-defense"
         title="La Légitime Defense"
-        mdPath="/officiel/src/content/origines/legitime-defense.md" 
+        mdPath="src/content/origines/legitime-defense.md" 
         subtitle={'Ce que dit la loi'}
-        imagePath="/officiel/img/sections/self.png"  
+        imagePath="img/sections/self.png"  
         imgBgColor="#fedad6"
         bgColor="#fff3e4"
         chipText="Découvrir" 
@@ -80,7 +80,7 @@ export default function Origines() {
         title="Brevets"
         mdPath="/officiel/brevets.pdf" 
         subtitle={"Les brevets au 19ème siècle de Maître d'Armes et de Prévôt d'Armes"}
-        imagePath="/officiel/img/sections/brevet.png"  
+        imagePath="img/sections/brevet.png"  
         imgBgColor="#fedad6"
         bgColor="#fff3e4"
         chipText="Découvrir" 

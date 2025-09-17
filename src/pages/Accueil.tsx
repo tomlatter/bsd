@@ -7,8 +7,8 @@ import {
   Typography,
 } from '@mui/material'
 import { useNavigate } from 'react-router-dom'
-import self_img from "/officiel/img/self.png";
-import baton_img from "/officiel/img/baton.png";
+import self_img from "img/self.png";
+import baton_img from "img/baton.png";
 import { Helmet } from 'react-helmet-async';
 
 
@@ -17,37 +17,37 @@ const cards = [
     title: 'Origines',
     description: 'Découvrez les origines de la discipline et de son fondateur.',
     path: '/officiel/origines',
-    image: '/officiel/img/histoire.jpg',
+    image: 'img/histoire.jpg',
   },
   {
     title: 'Cours',
     description: "Le B.S-D est actuellement enseigné à Toulouse avec cours d'essai gratuits.",
     path: '/officiel/cours',
-    image: '/officiel/img/cours.jpg',
+    image: 'img/cours.jpg',
   },
   {
     title: 'Techniques',
     description: 'Approche moderne des techniques de défense à mains nues et au bâton.',
     path: '/officiel/techniques',
-    image: '/officiel/img/techniques.jpg',
+    image: 'img/techniques.jpg',
   },
   {
     title: 'Niveaux',
     description: 'Les ceintures, titres et protocoles.',
     path: '/officiel/niveaux',
-    image: '/officiel/img/niveaux.png',
+    image: 'img/niveaux.png',
   },
   {
     title: 'Sagesse',
     description: 'Principes qui guident la pratique.',
     path: '/officiel/sagesse',
-    image: '/officiel/img/sagesse.jpg',
+    image: 'img/sagesse.jpg',
   },
   {
     title: 'Photos',
     description: 'Plus de 40 ans de souvenirs.',
     path: '/officiel/photos',
-    image: '/officiel/img/archives.png',
+    image: 'img/archives.png',
   },
 ]
 
@@ -172,7 +172,7 @@ export default function Accueil() {
                   sx={{
                     width: '100%',
                     height: {xs: 280, md: 400},
-                    backgroundImage: `url(${'/officiel/img/front.png'})`,
+                    backgroundImage: `url(${'img/front.png'})`,
                     backgroundSize: 'cover',
                     backgroundPosition: 'center',
                   }}

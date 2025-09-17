@@ -11,8 +11,8 @@ export default function UvPromoCard() {
           minHeight: { xs: 240, sm: 300, md: 560 },
           display: "flex",
           alignItems: "stretch",
-          // put your file in /public/officiel/img/uv-promo-bg.png (the one you liked)
-          backgroundImage: `url("/officiel/img/uv_banner.png")`,
+          // put your file in /publicimg/uv-promo-bg.png (the one you liked)
+          backgroundImage: `url("img/uv_banner.png")`,
           backgroundSize: "cover",
           backgroundRepeat: "no-repeat",
           backgroundPosition: { xs: "center", md: "left center" },

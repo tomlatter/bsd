@@ -24,7 +24,7 @@ const BATCH_SIZE = 10;
   }
 
 const imageFilenames = Array.from({ length: TOTAL_IMAGES }, (_, i) => `${i + 1}.jpg`);
-const imageUrls = shuffleArray(imageFilenames.map((name) => `/officiel/photos/${name}`));
+const imageUrls = shuffleArray(imageFilenames.map((name) => `photos/${name}`));
 
 type GalleryImage = {
   src: string;

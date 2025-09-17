@@ -13,7 +13,7 @@ import {
 import MenuIcon from '@mui/icons-material/Menu'
 import { Link, Outlet, useLocation } from 'react-router-dom'
 import { useEffect, useState } from 'react'
-import logo from '/officiel/img/logo_noir.png'
+import logo from 'img/logo_noir.png'
 import Footer from './Footer'
 
 const navItems = [
@@ -48,7 +48,7 @@ export default function Layout() {
         position: 'fixed',
         inset: 0,
         zIndex: -1,
-        // backgroundImage: 'url(/officiel/img/foret.png)',
+        // backgroundImage: 'url(img/foret.png)',
         backgroundColor: {xs: 'white', sm: '#ffefd3'},
         backgroundRepeat: 'repeat',
         backgroundSize: 'cover',
