@@ -2,5 +2,5 @@
 > **– J.L. Brinker, 1er Mai 2015**
 
 
-![Alt text](/img/energies.png)
+![Alt text](/officiel/img/energies.png)
 

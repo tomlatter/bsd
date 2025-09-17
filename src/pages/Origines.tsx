@@ -40,7 +40,7 @@ export default function Origines() {
         title="Présentation"
         mdPath="/src/content/origines/presentation.md" 
         subtitle={'Une discipline moderne nourrie d’héritages anciens'}
-        imagePath="/img/sections/presentation.jpg"  
+        imagePath="/officiel/img/sections/presentation.jpg"  
         imgBgColor="#fedad6"
         bgColor="#fff3e4"
         chipText="Découvrir" 
@@ -50,7 +50,7 @@ export default function Origines() {
         title="Origines du B.S-D"
         mdPath="/src/content/origines/origines.md" 
         subtitle={"D'où vient le B.S-D ?"}
-        imagePath="/img/sections/origines.jpg"  
+        imagePath="/officiel/img/sections/origines.jpg"  
         imgBgColor="#fedad6"
         bgColor="#fff3e4"
         chipText="Découvrir" 
@@ -60,7 +60,7 @@ export default function Origines() {
         title="Le Griot Fustigeur"
         mdPath="/src/content/origines/griot.md"
         subtitle={"Le livre autobiographique du fondateur du B.S-D"} 
-        imagePath="/img/sections/livre.png"  
+        imagePath="/officiel/img/sections/livre.png"  
         imgBgColor="#fedad6"
         bgColor="#fff3e4"
         chipText="Découvrir" 
@@ -70,7 +70,7 @@ export default function Origines() {
         title="La Légitime Defense"
         mdPath="/src/content/origines/legitime-defense.md" 
         subtitle={'Ce que dit la loi'}
-        imagePath="/img/sections/self.png"  
+        imagePath="/officiel/img/sections/self.png"  
         imgBgColor="#fedad6"
         bgColor="#fff3e4"
         chipText="Découvrir" 
@@ -80,7 +80,7 @@ export default function Origines() {
         title="Brevets"
         mdPath="brevets.pdf" 
         subtitle={"Les brevets au 19ème siècle de Maître d'Armes et de Prévôt d'Armes"}
-        imagePath="/img/sections/brevet.png"  
+        imagePath="/officiel/img/sections/brevet.png"  
         imgBgColor="#fedad6"
         bgColor="#fff3e4"
         chipText="Découvrir" 

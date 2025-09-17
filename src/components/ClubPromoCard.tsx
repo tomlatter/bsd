@@ -11,7 +11,7 @@ export default function ClubPromoCard() {
           display: "flex",
           alignItems: "stretch",
           // Replace with your club promo background image
-          backgroundImage: `url("/img/banner_cours.jpg")`,
+          backgroundImage: `url("/officiel/img/banner_cours.jpg")`,
           backgroundSize: "cover",
           backgroundRepeat: "no-repeat",
           backgroundPosition: { xs: "center", md: "left center" },

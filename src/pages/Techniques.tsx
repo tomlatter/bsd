@@ -41,7 +41,7 @@ export default function Techniques() {
         title="Distances"
         mdPath="/src/content/techniques/distances.md"
         subtitle={'Distances et Techniques de combat en B.S-D.'}
-        imagePath="/img/sections/distances.png"  
+        imagePath="/officiel/img/sections/distances.png"  
         imgBgColor="#fedad6"
         bgColor="#fff3e4"
         chipText="Découvrir"
@@ -51,7 +51,7 @@ export default function Techniques() {
         title="Schéma"
         mdPath="/src/content/techniques/frappes-baton.md"
         subtitle={'Schéma des techniques de frappes au bâton.'}
-        imagePath="/img/sections/schema.png"  
+        imagePath="/officiel/img/sections/schema.png"  
         imgBgColor="#fedad6"
         bgColor="#fff3e4"
         chipText="Découvrir"
@@ -61,7 +61,7 @@ export default function Techniques() {
         title="Enchainements"
         mdPath="/src/content/techniques/enchainements.md"
         subtitle={'Les enchaînements techniques et codifés au bâton.'}
-        imagePath="/img/sections/enchainements.png"  
+        imagePath="/officiel/img/sections/enchainements.png"  
         imgBgColor="#fedad6"
         bgColor="#fff3e4"
         chipText="Découvrir"
@@ -71,7 +71,7 @@ export default function Techniques() {
         title="Energies"
         mdPath="/src/content/techniques/energies.md"
         subtitle={'Energie interne - Energie externe'}
-        imagePath="/img/sections/energies.png"  
+        imagePath="/officiel/img/sections/energies.png"  
         imgBgColor="#fedad6"
         bgColor="#fff3e4"
         chipText="Découvrir"

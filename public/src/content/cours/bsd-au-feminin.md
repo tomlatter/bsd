@@ -42,15 +42,15 @@ La **photo ci-dessous**, et la **torsion des bâtons à l’impact** provoqué p
 
 ### Exemples techniques illustrés :
 
-![Alt text](/img/feminin/1.jpg)
+![Alt text](/officiel/img/feminin/1.jpg)
 
 - **Parade et contre** sur frappe en **Revers haut**  
 
-![Alt text](/img/feminin/2.jpg)
+![Alt text](/officiel/img/feminin/2.jpg)
 
 - **Parade et contre** sur frappe en **Biaisé bas**  
 
-![Alt text](/img/feminin/3.jpg)
+![Alt text](/officiel/img/feminin/3.jpg)
 
 - **Assaut libre** contre un homme (**militaire**) à la **canne PVC-Mousse**
 
@@ -80,19 +80,19 @@ La Self-Défense est une **caisse à outils** :
 
 ### Autres techniques illustrées :
 
-![Alt text](/img/feminin/4.jpg)
+![Alt text](/officiel/img/feminin/4.jpg)
 
 - **Projection BSD** par renversement du corps avec **coup de paume sous le menton**  
 
-![Alt text](/img/feminin/5.jpg)
+![Alt text](/officiel/img/feminin/5.jpg)
 
 - **Coup de talon retourné** au visage  
 
-![Alt text](/img/feminin/6.jpg)
+![Alt text](/officiel/img/feminin/6.jpg)
 
 - **Blocage sur uppercut** en combat libre  et  **Contre en coup de genou circulaire sauté** au niveau du **cœur** ou des **côtes flottantes**
 
-![Alt text](/img/feminin/7.jpg)
+![Alt text](/officiel/img/feminin/7.jpg)
 
 > 🧘 À l'entraînement, pour éviter les accidents, on frappe avec **le mollet** ou **la plante du pied**.
 

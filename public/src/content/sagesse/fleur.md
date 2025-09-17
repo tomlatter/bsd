@@ -1,4 +1,4 @@
-![Alt text](/img/sagesse.jpg)
+![Alt text](/officiel/img/sagesse.jpg)
 
 ## Symbole de l’Amandier
 
