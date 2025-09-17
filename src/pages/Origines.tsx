@@ -38,7 +38,7 @@ export default function Origines() {
       <ExpandableSection
         id="presentation"
         title="Présentation"
-        mdPath="src/content/origines/presentation.md" 
+        mdPath={`${import.meta.env.BASE_URL}src:content/origines/presentation.md`}
         subtitle={'Une discipline moderne nourrie d’héritages anciens'}
         imagePath={`${import.meta.env.BASE_URL}img/sections/presentation.jpg`}    
         imgBgColor="#fedad6"
@@ -48,7 +48,7 @@ export default function Origines() {
       <ExpandableSection
         id="origines"
         title="Origines du B.S-D"
-        mdPath="src/content/origines/origines.md" 
+        mdPath={`${import.meta.env.BASE_URL}src:content/origines/origines.md`} 
         subtitle={"D'où vient le B.S-D ?"}
         imagePath={`${import.meta.env.BASE_URL}img/sections/origines.jpg`}   
         imgBgColor="#fedad6"
@@ -58,7 +58,7 @@ export default function Origines() {
       <ExpandableSection
         id="le-griot"
         title="Le Griot Fustigeur"
-        mdPath="src/content/origines/griot.md"
+        mdPath={`${import.meta.env.BASE_URL}src:content/origines/griot.md`}
         subtitle={"Le livre autobiographique du fondateur du B.S-D"} 
         imagePath={`${import.meta.env.BASE_URL}img/sections/livre.png`}   
         imgBgColor="#fedad6"
@@ -68,7 +68,7 @@ export default function Origines() {
       <ExpandableSection
         id="legitime-defense"
         title="La Légitime Defense"
-        mdPath="src/content/origines/legitime-defense.md" 
+        mdPath={`${import.meta.env.BASE_URL}src:content/origines/legitime-defense.md`} 
         subtitle={'Ce que dit la loi'}
         imagePath={`${import.meta.env.BASE_URL}img/sections/self.png`}   
         imgBgColor="#fedad6"

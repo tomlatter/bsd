@@ -91,7 +91,7 @@ export default function Sagesse() {
           id="fleur"
           title="Fleur d'Amandier"
           subtitle="La Fleur d'Amandier est le symbole du B.S-D."
-          mdPath="src/content/sagesse/fleur.md"
+          mdPath={`${import.meta.env.BASE_URL}src:content/sagesse/fleur.md`}
           imagePath="img/sections/fleur.png"  
           imgBgColor="#fedad6"
           bgColor="#fff3e4"
@@ -101,7 +101,7 @@ export default function Sagesse() {
           id="maitre-kano"
           title="Maître Kano"
           subtitle="Hommage à Jigoro KANO, fondateur du Judo."
-          mdPath="src/content/sagesse/kano.md"
+          mdPath={`${import.meta.env.BASE_URL}src:content/sagesse/kano.md`}
           imagePath="img/sections/kano.jpg"  
           imgBgColor="#fedad6"
           bgColor="#fff3e4"
@@ -111,7 +111,7 @@ export default function Sagesse() {
           id="etiquette"
           title="Etiquette"
           subtitle="Le salut et la tenue dans le B.S-D."
-          mdPath="src/content/sagesse/etiquette.md"
+          mdPath={`${import.meta.env.BASE_URL}src:content/sagesse/etiquette.md`}
           imagePath="img/sections/etiquette.png"  
           imgBgColor="#fedad6"
           bgColor="#fff3e4"
@@ -121,7 +121,7 @@ export default function Sagesse() {
           id="cortex"
           title="Le Cortex"
           subtitle="Pratiquer d’abord, comprendre ensuite."
-          mdPath="src/content/sagesse/cortex.md"
+          mdPath={`${import.meta.env.BASE_URL}src:content/sagesse/cortex.md`}
           imagePath="img/sections/cortex.png"  
           imgBgColor="#fedad6"
           bgColor="#fff3e4"
@@ -131,7 +131,7 @@ export default function Sagesse() {
           id="meditations"
           title="Méditations"
           subtitle="Réflexions et commentaire de Jean Louis Brinker."
-          mdPath="src/content/sagesse/meditations.md"
+          mdPath={`${import.meta.env.BASE_URL}src:content/sagesse/meditations.md`}
           imagePath="img/sections/meditations.png"  
           imgBgColor="#fedad6"
           bgColor="#fff3e4"
@@ -141,7 +141,7 @@ export default function Sagesse() {
           id="expressions"
           title="Expressions"
           subtitle="Entretien avec Fabrice Robert et Jean Louis Brinker."
-          mdPath="src/content/sagesse/expressions.md"
+          mdPath={`${import.meta.env.BASE_URL}src:content/sagesse/expressions.md`}
           imagePath="img/sections/expressions.png"  
           imgBgColor="#fedad6"
           bgColor="#fff3e4"
