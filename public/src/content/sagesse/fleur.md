@@ -1,4 +1,4 @@
-![Alt text](${import.meta.env.BASE_URL}img/sagesse.jpg)
+![Alt text](img/sagesse.jpg)
 
 ## Symbole de l’Amandier
 

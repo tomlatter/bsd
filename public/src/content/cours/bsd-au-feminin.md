@@ -80,19 +80,19 @@ La Self-Défense est une **caisse à outils** :
 
 ### Autres techniques illustrées :
 
-![Alt text](${import.meta.env.BASE_URL}img/feminin/4.jpg)
+![Alt text](img/feminin/4.jpg)
 
 - **Projection BSD** par renversement du corps avec **coup de paume sous le menton**  
 
-![Alt text](${import.meta.env.BASE_URL}img/feminin/5.jpg)
+![Alt text](img/feminin/5.jpg)
 
 - **Coup de talon retourné** au visage  
 
-![Alt text](${import.meta.env.BASE_URL}img/feminin/6.jpg)
+![Alt text](img/feminin/6.jpg)
 
 - **Blocage sur uppercut** en combat libre  et  **Contre en coup de genou circulaire sauté** au niveau du **cœur** ou des **côtes flottantes**
 
-![Alt text](${import.meta.env.BASE_URL}img/feminin/7.jpg)
+![Alt text](img/feminin/7.jpg)
 
 > 🧘 À l'entraînement, pour éviter les accidents, on frappe avec **le mollet** ou **la plante du pied**.
 
