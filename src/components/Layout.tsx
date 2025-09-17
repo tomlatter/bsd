@@ -13,8 +13,9 @@ import {
 import MenuIcon from '@mui/icons-material/Menu'
 import { Link, Outlet, useLocation } from 'react-router-dom'
 import { useEffect, useState } from 'react'
-import logo from 'img/logo_noir.png'
 import Footer from './Footer'
+
+const logo = `${import.meta.env.BASE_URL}img/logo_noir.png`;
 
 const navItems = [
   { label: 'Accueil', path: '/' },
