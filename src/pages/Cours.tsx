@@ -22,7 +22,7 @@ export default function Cours() {
       <ExpandableSection
         id="initiation"
         title="Initiation"
-        mdPath={`${import.meta.env.BASE_URL}src:content/cours/initiation.md`}
+        mdPath={`${import.meta.env.BASE_URL}src/content/cours/initiation.md`}
         subtitle={'Franchir la porte : premier pas vers la confiance et la maîtrise'}
         imagePath={`${import.meta.env.BASE_URL}img/sections/initiation.png`}  
         imgBgColor="#fedad6"
@@ -35,7 +35,7 @@ export default function Cours() {
         id="philosophie"
         title="Philosophie"
         subtitle="Plus qu'un sport, le BSD est un art de vivre."
-        mdPath={`${import.meta.env.BASE_URL}src:content/cours/philosophie.md`}
+        mdPath={`${import.meta.env.BASE_URL}src/content/cours/philosophie.md`}
         imagePath={`${import.meta.env.BASE_URL}img/sections/philosophie.png`}   
         imgBgColor="#fedad6"
         bgColor="#fff3e4"
@@ -46,7 +46,7 @@ export default function Cours() {
         id="cotisations"
         title="Cotisations"
         subtitle="Infos sur les paiements"
-        mdPath={`${import.meta.env.BASE_URL}src:content/cours/cotisations.md`}
+        mdPath={`${import.meta.env.BASE_URL}src/content/cours/cotisations.md`}
         imagePath={`${import.meta.env.BASE_URL}img/sections/cotisations.png`}   
         imgBgColor="#fedad6"
         bgColor="#fff3e4"
@@ -57,7 +57,7 @@ export default function Cours() {
         id="calendrier"
         title="Calendrier"
         subtitle="Horaires et dates d'entrainements"
-        mdPath={`${import.meta.env.BASE_URL}src:content/cours/calendrier.md`}
+        mdPath={`${import.meta.env.BASE_URL}src/content/cours/calendrier.md`}
         imagePath={`${import.meta.env.BASE_URL}img/sections/calendrier.png`}   
         imgBgColor="#fedad6"
         bgColor="#fff3e4"
@@ -68,7 +68,7 @@ export default function Cours() {
           id="etre-bien"
           title="Etre bien"
           subtitle="L'essentiel est d'être bien dans sa peau."
-          mdPath={`${import.meta.env.BASE_URL}src:content/cours/bien.md`}
+          mdPath={`${import.meta.env.BASE_URL}src/content/cours/bien.md`}
           imagePath={`${import.meta.env.BASE_URL}img/sections/bien.jpg`}    
           imgBgColor="#fedad6"
           bgColor="#fff3e4"
@@ -78,7 +78,7 @@ export default function Cours() {
       <ExpandableSection
         id="bsd-au-feminin"
         title="Le B.S-D au féminin"
-        mdPath={`${import.meta.env.BASE_URL}src:content/cours/bsd-au-feminin.md`}
+        mdPath={`${import.meta.env.BASE_URL}src/content/cours/bsd-au-feminin.md`}
         subtitle={' Quand la technique surpasse la force : le B.S-D comme levier d’égalité '}
         imagePath={`${import.meta.env.BASE_URL}img/sections/self.png`}    
         imgBgColor="#fedad6"

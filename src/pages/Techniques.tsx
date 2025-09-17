@@ -39,7 +39,7 @@ export default function Techniques() {
       <ExpandableSection
         id="distances"
         title="Distances"
-        mdPath={`${import.meta.env.BASE_URL}src:content/techniques/distances.md`}
+        mdPath={`${import.meta.env.BASE_URL}src/content/techniques/distances.md`}
         subtitle={'Distances et Techniques de combat en B.S-D.'}
         imagePath="img/sections/distances.png"  
         imgBgColor="#fedad6"
@@ -49,7 +49,7 @@ export default function Techniques() {
       <ExpandableSection
         id="schema"
         title="Schéma"
-        mdPath={`${import.meta.env.BASE_URL}src:content/techniques/frappes-baton.md`}
+        mdPath={`${import.meta.env.BASE_URL}src/content/techniques/frappes-baton.md`}
         subtitle={'Schéma des techniques de frappes au bâton.'}
         imagePath="img/sections/schema.png"  
         imgBgColor="#fedad6"
@@ -59,7 +59,7 @@ export default function Techniques() {
       <ExpandableSection
         id="enchainements"
         title="Enchainements"
-        mdPath={`${import.meta.env.BASE_URL}src:content/techniques/enchainements.md`}
+        mdPath={`${import.meta.env.BASE_URL}src/content/techniques/enchainements.md`}
         subtitle={'Les enchaînements techniques et codifés au bâton.'}
         imagePath="img/sections/enchainements.png"  
         imgBgColor="#fedad6"
@@ -69,7 +69,7 @@ export default function Techniques() {
       <ExpandableSection
         id="enerigies"
         title="Energies"
-        mdPath={`${import.meta.env.BASE_URL}src:content/techniques/energies.md`}
+        mdPath={`${import.meta.env.BASE_URL}src/content/techniques/energies.md`}
         subtitle={'Energie interne - Energie externe'}
         imagePath="img/sections/energies.png"  
         imgBgColor="#fedad6"
