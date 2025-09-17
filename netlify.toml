@@ -1,0 +1,10 @@
+# netlify.toml (OFFICIAL site)
+[[redirects]]
+  from = "/officiel"
+  to = "/officiel/"
+  status = 301
+
+[[redirects]]
+  from = "/officiel/*"
+  to = "/officiel/index.html"
+  status = 200
