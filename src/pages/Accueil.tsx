@@ -108,7 +108,7 @@ export default function Accueil() {
             WebkitTextFillColor: 'transparent',
           }}
         >
-          Site officiel du B.S-D
+          Guide officiel du B.S-D
         </Typography>
 
     <Typography
