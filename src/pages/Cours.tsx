@@ -24,7 +24,7 @@ export default function Cours() {
         title="Initiation"
         mdPath="src/content/cours/initiation.md"
         subtitle={'Franchir la porte : premier pas vers la confiance et la maîtrise'}
-        imagePath="img/sections/initiation.png"  
+        imagePath={`${import.meta.env.BASE_URL}img/sections/initiation.png`}  
         imgBgColor="#fedad6"
         bgColor="#fff3e4"
         chipText="Découvrir" 
@@ -36,7 +36,7 @@ export default function Cours() {
         title="Philosophie"
         subtitle="Plus qu'un sport, le BSD est un art de vivre."
         mdPath="src/content/cours/philosophie.md"
-        imagePath="img/sections/philosophie.png"  
+        imagePath={`${import.meta.env.BASE_URL}img/sections/philosophie.png`}   
         imgBgColor="#fedad6"
         bgColor="#fff3e4"
         chipText="Découvrir" 
@@ -47,7 +47,7 @@ export default function Cours() {
         title="Cotisations"
         subtitle="Infos sur les paiements"
         mdPath="src/content/cours/cotisations.md"
-        imagePath="img/sections/cotisations.png"  
+        imagePath={`${import.meta.env.BASE_URL}img/sections/cotisations.png`}   
         imgBgColor="#fedad6"
         bgColor="#fff3e4"
         chipText="Découvrir" 
@@ -58,7 +58,7 @@ export default function Cours() {
         title="Calendrier"
         subtitle="Horaires et dates d'entrainements"
         mdPath="src/content/cours/calendrier.md"
-        imagePath="img/sections/calendrier.png"  
+        imagePath={`${import.meta.env.BASE_URL}img/sections/calendrier.png`}   
         imgBgColor="#fedad6"
         bgColor="#fff3e4"
         chipText="Découvrir" 
@@ -69,7 +69,7 @@ export default function Cours() {
           title="Etre bien"
           subtitle="L'essentiel est d'être bien dans sa peau."
           mdPath="src/content/cours/bien.md"
-          imagePath="img/sections/bien.jpg"  
+          imagePath={`${import.meta.env.BASE_URL}img/sections/bien.jpg`}    
           imgBgColor="#fedad6"
           bgColor="#fff3e4"
           chipText="Découvrir" 
@@ -80,7 +80,7 @@ export default function Cours() {
         title="Le B.S-D au féminin"
         mdPath="src/content/cours/bsd-au-feminin.md" 
         subtitle={' Quand la technique surpasse la force : le B.S-D comme levier d’égalité '}
-        imagePath="img/sections/self.png"   
+        imagePath={`${import.meta.env.BASE_URL}img/sections/self.png`}    
         imgBgColor="#fedad6"
         bgColor="#fff3e4"
         chipText="Découvrir" 

@@ -1,4 +1,4 @@
-![Alt text](img/schema-techniques.jpg)
+![Alt text](${import.meta.env.BASE_URL}img/schema-techniques.jpg)
 
 ---
 

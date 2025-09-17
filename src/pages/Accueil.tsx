@@ -17,37 +17,37 @@ const cards = [
     title: 'Origines',
     description: 'Découvrez les origines de la discipline et de son fondateur.',
     path: '/officiel/origines',
-    image: 'img/histoire.jpg',
+    image: `${import.meta.env.BASE_URL}img/histoire.jpg`,
   },
   {
     title: 'Cours',
     description: "Le B.S-D est actuellement enseigné à Toulouse avec cours d'essai gratuits.",
     path: '/officiel/cours',
-    image: 'img/cours.jpg',
+    image: `${import.meta.env.BASE_URL}img/cours.jpg`,
   },
   {
     title: 'Techniques',
     description: 'Approche moderne des techniques de défense à mains nues et au bâton.',
     path: '/officiel/techniques',
-    image: 'img/techniques.jpg',
+    image: `${import.meta.env.BASE_URL}img/techniques.jpg`,
   },
   {
     title: 'Niveaux',
     description: 'Les ceintures, titres et protocoles.',
     path: '/officiel/niveaux',
-    image: 'img/niveaux.png',
+    image: `${import.meta.env.BASE_URL}img/niveaux.png`,
   },
   {
     title: 'Sagesse',
     description: 'Principes qui guident la pratique.',
     path: '/officiel/sagesse',
-    image: 'img/sagesse.jpg',
+    image: `${import.meta.env.BASE_URL}img/sagesse.jpg`,
   },
   {
     title: 'Photos',
     description: 'Plus de 40 ans de souvenirs.',
     path: '/officiel/photos',
-    image: 'img/archives.png',
+    image: `${import.meta.env.BASE_URL}img/archives.png`,
   },
 ]
 

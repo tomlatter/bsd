@@ -55,7 +55,7 @@ export default function Niveaux() {
           title="Introduction"
           subtitle="Les termes, les couleurs et leur signification"
           mdPath="src/content/niveaux/intro.md"
-          imagePath="img/sections/couleurs.png"  
+          imagePath={`${import.meta.env.BASE_URL}img/sections/couleurs.png`}   
           imgBgColor="#fedad6"
           bgColor="#fff3e4"
           chipText="Découvrir" 
@@ -65,7 +65,7 @@ export default function Niveaux() {
           title="Protocole"
           subtitle="Les protocoles du B.S-D"
           mdPath="src/content/niveaux/protocole.md"
-          imagePath="img/sections/protocole.png"  
+          imagePath={`${import.meta.env.BASE_URL}img/sections/protocole.png`}   
           imgBgColor="#fedad6"
           bgColor="#fff3e4"
           chipText="Découvrir" 
@@ -75,7 +75,7 @@ export default function Niveaux() {
           title="Niveaux 1 à 4"
           subtitle="Quatre niveaux Techniques"
           mdPath="src/content/niveaux/1-2-3-4.md"
-          imagePath="img/sections/ceintures.png"  
+          imagePath={`${import.meta.env.BASE_URL}img/sections/ceintures.png`}    
           imgBgColor="#fedad6"
           bgColor="#fff3e4"
           chipText="Découvrir" 
@@ -85,7 +85,7 @@ export default function Niveaux() {
           title="Niveaux 4 à 6"
           subtitle="Trois niveaux Pédagogiques"
           mdPath="src/content/niveaux/4-5-6.md"
-          imagePath="img/sections/prof.png"  
+          imagePath={`${import.meta.env.BASE_URL}img/sections/prof.png`}  
           imgBgColor="#fedad6"
           bgColor="#fff3e4"
           chipText="Découvrir" 
@@ -95,7 +95,7 @@ export default function Niveaux() {
           title="Niveaux 7 à 8"
           subtitle="Deux niveaux de Recherche"
           mdPath="src/content/niveaux/7-8.md"
-          imagePath="img/sections/recherche.png"  
+          imagePath={`${import.meta.env.BASE_URL}img/sections/recherche.png`}    
           imgBgColor="#fedad6"
           bgColor="#fff3e4"
           chipText="Découvrir" 
@@ -105,7 +105,7 @@ export default function Niveaux() {
           title="Niveau 9"
           subtitle="Gardien du B.S-D : Un niveau Technique, Pédagogique, Philosophique et de Recherche"
           mdPath="src/content/niveaux/9.md"
-          imagePath="img/sections/corde_tricolore.png"  
+          imagePath={`${import.meta.env.BASE_URL}img/sections/corde_tricolore.png`}   
           imgBgColor="#fedad6"
           bgColor="#fff3e4"
           chipText="Découvrir" 
@@ -115,7 +115,7 @@ export default function Niveaux() {
           title="Niveau 10"
           subtitle="Gardien de la Voie : Un niveau Spirituel (Conseil des Sages)"
           mdPath="src/content/niveaux/10.md"
-          imagePath="img/sections/corde_blanche.png"  
+          imagePath={`${import.meta.env.BASE_URL}img/sections/corde_blanche.png`}  
           imgBgColor="#fedad6"
           bgColor="#fff3e4"
           chipText="Découvrir" 
@@ -125,7 +125,7 @@ export default function Niveaux() {
           title="Evaluation et Niveaux"
           subtitle="Les Unités de Valeur du B.S-D"
           mdPath="src/content/niveaux/evaluation.md"
-          imagePath="img/sections/certificat.png"  
+          imagePath={`${import.meta.env.BASE_URL}img/sections/certificat.png`}    
           imgBgColor="#fedad6"
           bgColor="#fff3e4"
           chipText="Découvrir" 
