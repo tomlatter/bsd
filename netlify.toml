@@ -31,9 +31,9 @@
   status = 200
   force = true
 
-# Other docs 
+# Serve any file that has an extension as-is (JS, CSS, images, PDFs, etc.)
 [[redirects]]
-  from = "/officiel/*.(png|jpg|jpeg|webp|gif|svg|ico|mp4|webm|mp3|woff|woff2|ttf|otf|txt|xml|pdf)"
+  from = "/officiel/*.*"
   to = "/officiel/:splat"
   status = 200
   force = true
