@@ -246,7 +246,7 @@ export default function Accueil() {
         WebkitTextFillColor: 'transparent',
     }}
   >
-    Une Tradition Ancienne, Une Discipline Moderne
+    Une Tradition Ancienne, une Discipline Moderne
   </Typography>
 
   {/* First paragraph */}
