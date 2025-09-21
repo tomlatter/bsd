@@ -1,20 +1,37 @@
 # netlify.toml (OFFICIAL site)
 
-# 1) Normalize /officiel -> /officiel/
+# Normalize
 [[redirects]]
   from = "/officiel"
   to = "/officiel/"
   status = 301
 
-# 2) Serve built assets AS-IS (avoid rewriting them to HTML)
-#    Vite puts all hashed JS/CSS/etc under /officiel/assets/*
+# Serve Vite-built assets as-is
 [[redirects]]
   from = "/officiel/assets/*"
   to = "/officiel/assets/:splat"
   status = 200
   force = true
 
-# 3) SPA fallback for every other /officiel/* route
+[[redirects]]
+  from = "/officiel/photos/*"
+  to = "/officiel/photos/:splat"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/officiel/img/*"
+  to = "/officiel/img/:splat"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/officiel/src/*"
+  to = "/officiel/src/:splat"
+  status = 200
+  force = true
+
+# SPA fallback for everything else under /officiel/*
 [[redirects]]
   from = "/officiel/*"
   to = "/officiel/index.html"
