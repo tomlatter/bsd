@@ -112,7 +112,7 @@ export default function MyGallery() {
   return (
     <>   
      <Helmet>
-        <title>BSD Officiel | Photos</title>
+        <title>BSD Guide Officiel | Photos</title>
         <meta name="description" content="Une discipline martiale combinant 
           Bâton de Combat et Self-Défense. Enseigné à Toulouse. Plus de 40 ans de souvenirs." />
       </Helmet>

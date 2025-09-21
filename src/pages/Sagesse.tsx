@@ -7,7 +7,7 @@ export default function Sagesse() {
   return (
         <>     
      <Helmet>
-        <title>BSD Officiel | Sagesse</title>
+        <title>BSD Guide Officiel | Sagesse</title>
         <meta name="description" content="Une discipline martiale combinant 
           Bâton de Combat et Self-Défense. Enseigné à Toulouse. Les principes qui guident la pratique." />
       </Helmet>

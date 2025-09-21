@@ -8,7 +8,7 @@ export default function Cours() {
   return (
      <>     
      <Helmet>
-        <title>BSD Officiel | Cours</title>
+        <title>BSD Guide Officiel | Cours</title>
         <meta name="description" content="Cours de  
           Bâton de Combat et Self-Défense. Le B.S-D est actuellement enseigné à Toulouse avec cours d'essai gratuits." />
       </Helmet>

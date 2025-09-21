@@ -8,7 +8,7 @@ export default function Niveaux() {
   return (
         <>     
      <Helmet>
-        <title>BSD Officiel | Niveaux</title>
+        <title>BSD Guide Officiel | Niveaux</title>
         <meta name="description" content="Une discipline martiale combinant 
           Bâton de Combat et Self-Défense. Enseigné à Toulouse. Les ceintures, titres et protocoles." />
       </Helmet>

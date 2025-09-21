@@ -63,7 +63,7 @@ export default function Accueil() {
   return (
     <>     
      <Helmet>
-        <title>BSD Officiel | Acceuil</title>
+        <title>BSD Guide Officiel | Acceuil</title>
         <meta name="description" content="La discipline martiale française 
           Bâton de Combat et Self-Défense. Enseigné à Toulouse." />
       </Helmet>

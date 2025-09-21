@@ -7,7 +7,7 @@ export default function Techniques() {
   return (
         <>     
      <Helmet>
-        <title>BSD Officiel | Techniques</title>
+        <title>BSD Guide Officiel | Techniques</title>
         <meta name="description" content="Une discipline martiale combinant 
           Bâton de Combat et Self-Défense. Approche moderne des techniques de défense à mains nues et au bâton." />
       </Helmet>

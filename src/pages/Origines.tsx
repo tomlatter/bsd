@@ -7,7 +7,7 @@ export default function Origines() {
   return (
         <>     
      <Helmet>
-        <title>BSD Officiel | Origines</title>
+        <title>BSD Guide Officiel | Origines</title>
         <meta name="description" content="<Les origines du BSD - 
           Bâton de Combat et Self-Défense. Enseigné à Toulouse." />
       </Helmet>
