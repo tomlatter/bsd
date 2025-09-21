@@ -31,6 +31,13 @@
   status = 200
   force = true
 
+# Other docs 
+[[redirects]]
+  from = "/officiel/*.(png|jpg|jpeg|webp|gif|svg|ico|mp4|webm|mp3|woff|woff2|ttf|otf|txt|xml)"
+  to = "/officiel/:splat"
+  status = 200
+  force = true
+
 # SPA fallback for everything else under /officiel/*
 [[redirects]]
   from = "/officiel/*"
