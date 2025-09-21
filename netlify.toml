@@ -33,7 +33,7 @@
 
 # Other docs 
 [[redirects]]
-  from = "/officiel/*.(png|jpg|jpeg|webp|gif|svg|ico|mp4|webm|mp3|woff|woff2|ttf|otf|txt|xml)"
+  from = "/officiel/*.(png|jpg|jpeg|webp|gif|svg|ico|mp4|webm|mp3|woff|woff2|ttf|otf|txt|xml|pdf)"
   to = "/officiel/:splat"
   status = 200
   force = true
