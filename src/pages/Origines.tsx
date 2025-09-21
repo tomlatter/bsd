@@ -78,7 +78,7 @@ export default function Origines() {
       <ExpandableSection
         id="brevets"
         title="Brevets"
-        mdPath="/officiel/brevets.pdf" 
+        mdPath="/docs/brevets.pdf" 
         subtitle={"Les brevets au 19ème siècle de Maître d'Armes et de Prévôt d'Armes"}
         imagePath={`${import.meta.env.BASE_URL}img/sections/brevet.png`}    
         imgBgColor="#fedad6"
