@@ -94,7 +94,7 @@ Un lien **Framadate** est envoyé par mail chaque semaine pour s'inscrire aux co
 
 ---
 
-## 📅 Tarifs par trimestre
+## 📅 Cotisations mensuelles dégressives
 
 **Septembre – Juin :** 150 €  
 **Octobre – Juin :** 135 €  
