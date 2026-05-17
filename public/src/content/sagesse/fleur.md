@@ -1,5 +1,7 @@
 ![Alt text](img/sagesse.jpg)
 
+La devise du B.S-D **«Transmettre pour aider»** JL Brinker
+
 ## Symbole de l’Amandier
 
 L’amandier est un des **symboles de l’amour et de la virginité**, les fleurs paraissant bien avant les feuilles,  
