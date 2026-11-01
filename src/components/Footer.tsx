@@ -108,6 +108,9 @@ const Footer = () => {
               </MuiLink>
               <MuiLink href="/officiel/origines#le-griot" underline="hover" sx={{ color: "grey.300", "&:hover": { color: "primary.light" } }}>
                 Le Griot Fustigeur
+              </MuiLink>              
+              <MuiLink href="https://www.baton-self.club/docs/charte-asat-bsd.pdf" underline="hover" download sx={{ color: "grey.300", "&:hover": { color: "primary.light" } }}>
+                Charte ASAT - B.S-D
               </MuiLink>
             </Box>
           </Box>
